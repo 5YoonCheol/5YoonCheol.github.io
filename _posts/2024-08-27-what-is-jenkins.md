@@ -1,6 +1,6 @@
 ---
 title: "[Jenkins] Jenkins(젠킨스)란 무엇인가?"
-date: 2024-08-27 03:03:05 +0900
+date: 2024-08-27 02:00:00 +0900
 categories: [DevOps, CI-CD]
 tags: ["jenkins", "젠킨스"]
 tistory_url: https://yoon-ssi.tistory.com/34

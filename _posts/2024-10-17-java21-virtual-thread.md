@@ -1,6 +1,6 @@
 ---
 title: "[Java] Java21 가상 쓰레드 (Virtual Thread)"
-date: 2024-10-17 07:07:51 +0900
+date: 2024-10-17 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["java21", "virtual-thread", "가상-쓰레드"]
 tistory_url: https://yoon-ssi.tistory.com/86

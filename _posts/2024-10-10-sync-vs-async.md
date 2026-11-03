@@ -1,6 +1,6 @@
 ---
 title: "동기 / 비동기"
-date: 2024-10-10 10:10:14 +0900
+date: 2024-10-10 02:00:00 +0900
 categories: [CS, OS]
 tags: ["동기", "비동기", "프로그래밍"]
 tistory_url: https://yoon-ssi.tistory.com/79

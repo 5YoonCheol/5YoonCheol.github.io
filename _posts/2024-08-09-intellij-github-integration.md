@@ -1,6 +1,6 @@
 ---
 title: "[GitHub] IntelliJ에서 GitHub연동하기"
-date: 2024-08-09 12:39:13 +0900
+date: 2024-08-09 02:00:00 +0900
 categories: [DevOps, Git]
 tags: ["github", "intellij", "깃헙", "연동", "인텔리제이"]
 tistory_url: https://yoon-ssi.tistory.com/14

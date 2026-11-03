@@ -1,6 +1,6 @@
 ---
 title: "[SpringBoot] SecurityConfig 설정에 따른 인증오류.."
-date: 2024-07-31 18:30:04 +0900
+date: 2024-07-31 02:00:00 +0900
 categories: [TroubleShooting, Backend]
 tags: ["401에러", "api", "security", "securityconfig", "springboot", "인증오류"]
 tistory_url: https://yoon-ssi.tistory.com/4

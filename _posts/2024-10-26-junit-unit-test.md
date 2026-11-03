@@ -1,6 +1,6 @@
 ---
 title: "JUnit을 활용한 유닛 테스트"
-date: 2024-10-26 11:11:48 +0900
+date: 2024-10-26 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["junit", "유닛-테스트"]
 tistory_url: https://yoon-ssi.tistory.com/95

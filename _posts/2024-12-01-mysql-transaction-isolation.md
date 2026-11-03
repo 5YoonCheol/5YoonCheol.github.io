@@ -1,6 +1,6 @@
 ---
 title: "[MySql] MySql 트랜잭션과 격리 수준"
-date: 2024-12-01 10:00:38 +0900
+date: 2024-12-01 02:00:00 +0900
 categories: [Database, MySQL]
 tags: ["mysql", "격리수준", "트랜잭션"]
 tistory_url: https://yoon-ssi.tistory.com/132

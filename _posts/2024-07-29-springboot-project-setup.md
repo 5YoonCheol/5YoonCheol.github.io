@@ -1,6 +1,6 @@
 ---
 title: "SpringBoot 프로젝트 생성"
-date: 2024-07-29 17:36:23 +0900
+date: 2024-07-29 02:00:00 +0900
 categories: [Backend, Spring]
 tags: ["create", "intellij", "project", "springboot"]
 tistory_url: https://yoon-ssi.tistory.com/2

@@ -1,6 +1,6 @@
 ---
 title: "도커(Docker)란?"
-date: 2024-09-27 07:42:49 +0900
+date: 2024-09-27 02:00:00 +0900
 categories: [DevOps, Container]
 tags: ["docker", "도커"]
 tistory_url: https://yoon-ssi.tistory.com/66

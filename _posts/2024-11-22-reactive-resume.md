@@ -1,6 +1,6 @@
 ---
 title: "Reactive Resume - 오픈소스 이력서 제작 및 관리 도구"
-date: 2024-11-22 10:00:54 +0900
+date: 2024-11-22 02:00:00 +0900
 categories: [ETC, Trend]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/123

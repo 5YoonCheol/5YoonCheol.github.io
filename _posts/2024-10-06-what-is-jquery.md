@@ -1,6 +1,6 @@
 ---
 title: "jQuery란?"
-date: 2024-10-06 11:11:15 +0900
+date: 2024-10-06 02:00:00 +0900
 categories: [Frontend, JavaScript]
 tags: ["jquery"]
 tistory_url: https://yoon-ssi.tistory.com/75

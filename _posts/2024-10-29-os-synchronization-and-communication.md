@@ -1,6 +1,6 @@
 ---
 title: "[OS] 동기화와 통신"
-date: 2024-10-29 10:10:59 +0900
+date: 2024-10-29 02:00:00 +0900
 categories: [CS, OS]
 tags: ["동기화", "통신"]
 tistory_url: https://yoon-ssi.tistory.com/98

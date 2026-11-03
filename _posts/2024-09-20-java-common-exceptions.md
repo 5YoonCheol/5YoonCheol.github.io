@@ -1,6 +1,6 @@
 ---
 title: "[Java] 대표적인 Exception 종류와 해결방법"
-date: 2024-09-20 08:08:00 +0900
+date: 2024-09-20 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["exception", "java"]
 tistory_url: https://yoon-ssi.tistory.com/59

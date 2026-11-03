@@ -1,6 +1,6 @@
 ---
 title: "사용자와 서버 사이의 과정"
-date: 2024-11-06 09:09:32 +0900
+date: 2024-11-06 02:00:00 +0900
 categories: [CS, Network]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/107

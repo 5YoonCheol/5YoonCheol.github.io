@@ -1,6 +1,6 @@
 ---
 title: "JPA와 Hibernate를 통한 RDBMS 연계방법"
-date: 2024-10-22 11:11:30 +0900
+date: 2024-10-22 02:00:00 +0900
 categories: [Backend, JPA]
 tags: ["hibernate", "jpa"]
 tistory_url: https://yoon-ssi.tistory.com/91

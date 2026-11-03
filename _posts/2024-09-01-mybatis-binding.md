@@ -1,6 +1,6 @@
 ---
 title: "[MyBatis] 바인딩 ${}, #{}"
-date: 2024-09-01 10:10:39 +0900
+date: 2024-09-01 02:00:00 +0900
 categories: [Backend, MyBatis]
 tags: ["mybatis", "바인딩"]
 tistory_url: https://yoon-ssi.tistory.com/39

@@ -1,6 +1,6 @@
 ---
 title: "[MySql] MySql 성능 튜닝을 위한 5가지 팁"
-date: 2024-12-02 10:00:34 +0900
+date: 2024-12-02 02:00:00 +0900
 categories: [Database, MySQL]
 tags: ["mysql", "성능-튜닝"]
 tistory_url: https://yoon-ssi.tistory.com/133

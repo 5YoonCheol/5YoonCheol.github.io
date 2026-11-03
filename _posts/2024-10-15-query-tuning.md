@@ -1,6 +1,6 @@
 ---
 title: "쿼리튜닝?"
-date: 2024-10-15 05:05:09 +0900
+date: 2024-10-15 02:00:00 +0900
 categories: [Database, MySQL]
 tags: ["성능개선", "쿼리튜닝"]
 tistory_url: https://yoon-ssi.tistory.com/84

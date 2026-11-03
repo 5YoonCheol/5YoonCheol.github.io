@@ -1,6 +1,6 @@
 ---
 title: "[Spring] @Transactional이 동작하지 않는 경우 정리"
-date: 2026-11-03 21:00:00 +0900
+date: 2026-11-03 02:00:00 +0900
 categories: [Backend, Spring]
 tags: [spring, transactional, aop, 트랜잭션]
 ---

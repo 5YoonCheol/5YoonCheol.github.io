@@ -1,6 +1,6 @@
 ---
 title: "[톰캣] WAR 파일 배포 문제 해결"
-date: 2024-08-06 23:04:42 +0900
+date: 2024-08-06 02:00:00 +0900
 categories: [TroubleShooting, Backend]
 tags: ["tomcat(톰캣)", "war", "배포", "서버"]
 tistory_url: https://yoon-ssi.tistory.com/11

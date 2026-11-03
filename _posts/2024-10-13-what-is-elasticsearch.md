@@ -1,6 +1,6 @@
 ---
 title: "ElasticSearch란?"
-date: 2024-10-13 05:13:05 +0900
+date: 2024-10-13 02:00:00 +0900
 categories: [Database, NoSQL]
 tags: ["elasticsearch"]
 tistory_url: https://yoon-ssi.tistory.com/82

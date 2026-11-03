@@ -1,6 +1,6 @@
 ---
 title: "양방향 암호화 & 단방향 암호화"
-date: 2024-09-30 07:10:07 +0900
+date: 2024-09-30 02:00:00 +0900
 categories: [Security, Encryption]
 tags: ["단방향-암호화", "양방향-암호화"]
 tistory_url: https://yoon-ssi.tistory.com/69

@@ -1,6 +1,6 @@
 ---
 title: "Redis란?"
-date: 2024-10-27 13:13:12 +0900
+date: 2024-10-27 02:00:00 +0900
 categories: [Database, NoSQL]
 tags: ["redis", "장단점", "특징"]
 tistory_url: https://yoon-ssi.tistory.com/96

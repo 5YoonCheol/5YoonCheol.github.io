@@ -1,6 +1,6 @@
 ---
 title: "[Java] Text Blocks(텍스트 블록)?"
-date: 2024-08-19 11:11:54 +0900
+date: 2024-08-19 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["java15", "text-blocks", "자바", "텍스트-블록"]
 tistory_url: https://yoon-ssi.tistory.com/25

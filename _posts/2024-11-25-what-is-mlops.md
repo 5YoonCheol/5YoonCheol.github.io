@@ -1,6 +1,6 @@
 ---
 title: "MLOps란?"
-date: 2024-11-25 10:10:00 +0900
+date: 2024-11-25 02:00:00 +0900
 categories: [ETC, Trend]
 tags: ["mlops"]
 tistory_url: https://yoon-ssi.tistory.com/126

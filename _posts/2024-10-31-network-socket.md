@@ -1,6 +1,6 @@
 ---
 title: "[네트워크] Socket(소켓)"
-date: 2024-10-31 10:00:14 +0900
+date: 2024-10-31 02:00:00 +0900
 categories: [CS, Network]
 tags: ["socket", "소켓"]
 tistory_url: https://yoon-ssi.tistory.com/100

@@ -1,6 +1,6 @@
 ---
 title: "[Java] StringBuilder란?"
-date: 2024-09-13 11:11:31 +0900
+date: 2024-09-13 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["java", "stringbuilder"]
 tistory_url: https://yoon-ssi.tistory.com/52

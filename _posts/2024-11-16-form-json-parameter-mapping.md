@@ -1,6 +1,6 @@
 ---
 title: "Form 전송 시 JSON타입 파라미터 매핑"
-date: 2024-11-16 10:00:45 +0900
+date: 2024-11-16 02:00:00 +0900
 categories: [TroubleShooting, Backend]
 tags: ["form", "post", "데이터"]
 tistory_url: https://yoon-ssi.tistory.com/117

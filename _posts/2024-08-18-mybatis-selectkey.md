@@ -1,6 +1,6 @@
 ---
 title: "[MyBatis] <selectKey> 란?"
-date: 2024-08-18 07:55:48 +0900
+date: 2024-08-18 02:00:00 +0900
 categories: [Backend, MyBatis]
 tags: ["mybatis", "selectkey", "마이바티스", "키-값-가져오기"]
 tistory_url: https://yoon-ssi.tistory.com/24

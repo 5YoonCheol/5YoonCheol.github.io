@@ -1,6 +1,6 @@
 ---
 title: "[MySql] JOIN이란?"
-date: 2024-08-25 05:05:28 +0900
+date: 2024-08-25 02:00:00 +0900
 categories: [Database, MySQL]
 tags: ["join", "mysql"]
 tistory_url: https://yoon-ssi.tistory.com/32

@@ -1,6 +1,6 @@
 ---
 title: "[알고리즘] 삽입 정렬 (Insertion Sort)"
-date: 2024-11-13 10:00:35 +0900
+date: 2024-11-13 02:00:00 +0900
 categories: [Algorithm, Sort]
 tags: ["선택-정렬", "알고리즘"]
 tistory_url: https://yoon-ssi.tistory.com/114

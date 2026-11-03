@@ -1,6 +1,6 @@
 ---
 title: "크로스 사이트 스크립트(XSS)란?"
-date: 2024-10-02 11:11:14 +0900
+date: 2024-10-02 02:00:00 +0900
 categories: [Security, Web]
 tags: ["xss", "크로스-사이트-스크립트"]
 tistory_url: https://yoon-ssi.tistory.com/71

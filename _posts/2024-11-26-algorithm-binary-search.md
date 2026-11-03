@@ -1,6 +1,6 @@
 ---
 title: "[알고리즘] 이분 검색 알고리즘 (Binary Search)"
-date: 2024-11-26 10:00:19 +0900
+date: 2024-11-26 02:00:00 +0900
 categories: [Algorithm, Search]
 tags: ["이분-검색-알고리즘"]
 tistory_url: https://yoon-ssi.tistory.com/127
