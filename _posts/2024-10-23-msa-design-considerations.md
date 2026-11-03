@@ -13,7 +13,7 @@ MSA(Microservices Architecture)는 대규모 시스템을 작은 단위의 독�
 
 전통적인 **모놀리식 아키텍처**와는 달리, MSA는 더 큰 유연성, 확장성, 유지보수성을 제공해 준다.
 
-[2024.09.20 - [ETC] - MSA (Micro Services Architecture)란?](https://yoon-ssi.tistory.com/68)
+[MSA (Micro Services Architecture)란?](/posts/microservices-architecture/)
 
 ---
 
