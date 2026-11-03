@@ -3,6 +3,7 @@ title: "[Spring] @ExceptionHandler 이란?"
 date: 2024-11-20 02:00:00 +0900
 categories: [Backend, Spring]
 tags: ["@exceptionhandler"]
+description: Spring MVC에서 @ExceptionHandler가 예외를 처리하는 동작 방식과 @ControllerAdvice를 활용한 전역 예외 처리 예시를 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/121
 render_with_liquid: false
 ---

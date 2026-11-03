@@ -3,6 +3,7 @@ title: "Java Stream(스트림)은 무엇일까?"
 date: 2024-08-02 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["java", "stream", "선언형-프로그래밍", "스트림"]
+description: Java Stream의 선언형 프로그래밍, 지연 연산, 병렬 처리 같은 특징과 filter·map·collect 사용 예시를 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/6
 render_with_liquid: false
 ---

@@ -3,6 +3,7 @@ title: "[Java] HttpServletRequest를 통하여 Client IP 주소 가져오기"
 date: 2024-08-01 02:00:01 +0900
 categories: [Backend, Java]
 tags: ["httpservletrequest", "ip주소", "java"]
+description: HttpServletRequest의 getRemoteAddr()와 X-Forwarded-For 같은 프록시 헤더를 확인해 실제 클라이언트 IP를 가져오는 방법을 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/10
 render_with_liquid: false
 ---

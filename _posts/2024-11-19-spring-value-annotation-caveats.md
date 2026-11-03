@@ -3,6 +3,7 @@ title: "[Spring] @Value 어노테이션 주의점"
 date: 2024-11-19 02:00:00 +0900
 categories: [Backend, Spring]
 tags: ["@value-어노테이션"]
+description: Spring @Value 어노테이션의 주입 시점, 주입 방식, 프로퍼티 파일 경로 같은 주의점과 @ConfigurationProperties와의 차이를 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/120
 render_with_liquid: false
 ---

@@ -3,6 +3,7 @@ title: "[Spring] MVC2 패턴이란?"
 date: 2024-08-12 02:00:00 +0900
 categories: [Backend, Spring]
 tags: ["controller", "model", "mvc", "mvc패턴", "spring", "view", "모델", "뷰", "컨트롤러", "프레임워크"]
+description: MVC2 패턴의 Model·View·Controller 구성요소와 Spring Boot 백엔드, 프론트엔드 프레임워크가 API로 통신하는 구조를 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/18
 render_with_liquid: false
 ---

@@ -3,6 +3,7 @@ title: "[Java] StringBuilder란?"
 date: 2024-09-13 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["java", "stringbuilder"]
+description: Java StringBuilder가 필요한 이유와 String·StringBuffer와의 차이, append·insert·delete 같은 주요 메서드 사용법을 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/52
 render_with_liquid: false
 ---

@@ -3,6 +3,7 @@ title: "[MyBatis] CDATA 사용법"
 date: 2024-08-10 02:00:00 +0900
 categories: [Backend, MyBatis]
 tags: ["cdata", "mybatis", "문자열치환"]
+description: MyBatis XML 매퍼에서 비교연산자와 특수문자 때문에 생기는 오류를 CDATA로 해결하는 방법과 예시를 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/15
 render_with_liquid: false
 ---

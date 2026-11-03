@@ -3,6 +3,7 @@ title: "쿠버네티스(Kubernetes)란?"
 date: 2024-09-26 02:00:00 +0900
 categories: [DevOps, Container]
 tags: ["kubernetes", "쿠버네티스"]
+description: Kubernetes의 클러스터, 노드, 파드, 서비스, 디플로이먼트 같은 핵심 개념을 하나씩 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/65
 render_with_liquid: false
 ---

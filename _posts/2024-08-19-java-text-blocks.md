@@ -3,6 +3,7 @@ title: "[Java] Text Blocks(텍스트 블록)?"
 date: 2024-08-19 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["java15", "text-blocks", "자바", "텍스트-블록"]
+description: Java 15에 추가된 Text Blocks(텍스트 블록) 문법과 들여쓰기 처리, 이스케이프 감소 같은 특징을 예시와 함께 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/25
 render_with_liquid: false
 ---
