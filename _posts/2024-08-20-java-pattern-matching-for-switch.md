@@ -7,28 +7,24 @@ tistory_url: https://yoon-ssi.tistory.com/26
 render_with_liquid: false
 ---
 
-### **Java Pattern Matching (패턴 매칭) 이란?**
+### Java Pattern Matching (패턴 매칭)이란?
 
-이 기능은 Java16에서 preview로 도입되었고, Java17에서 정식 기능으로 포함되었다.
+switch문에서 쓰는 패턴 매칭은 Java 16에서 preview로 들어왔고, Java 17에서 정식 기능이 됐다.
 
-패턴 매칭을 통한 switch문의 개선은 코드의 가독성을 향상하는데 도움을 줄 수 있다.
-
----
-
-### **주요 특징**
-
-- **타입 패턴**:
-  - switch 문에서 직접 타입 검사와 캐스팅을 할 수 있다.
-- **null 처리**:
-  - switch 문에서 null 값을 직접 처리할 수 있다.
-- **가드 조건**:
-  - case 문에 추가적인 조건을 붙일 수 있다.
-- **화살표 구문**:
-  - -&gt;를 사용하여 간결한 switch 표현식을 작성할 수 있다.
+이걸 쓰면 switch문이 꽤 읽기 좋아진다.
 
 ---
 
-### **예시 코드**
+### 주요 특징
+
+- 타입 패턴: switch문 안에서 타입 검사와 캐스팅을 한 번에 할 수 있다.
+- null 처리: switch문에서 null을 직접 처리할 수 있다.
+- 가드 조건: case에 조건을 더 붙일 수 있다.
+- 화살표 구문: `->`로 switch 표현식을 짧게 쓸 수 있다.
+
+---
+
+### 예시 코드
 
 ```java
 public static String getStringValue(Object obj) {
@@ -43,13 +39,13 @@ public static String getStringValue(Object obj) {
 }
 ```
 
-위의 코드를 살펴보자.
+코드를 보면
 
-- 각 case에서 타입 패턴을 사용하여 객체의 타입을 검사하고 동시에 해당 타입의 변수로 캐스팅한다.
-- null case를 직접 처리할 수 있다.
-- -&gt; 화살표 구문을 사용하여 간결하게 표현했다.
+- case마다 타입 패턴으로 객체 타입을 검사하면서 동시에 그 타입 변수로 캐스팅한다.
+- null case를 직접 처리한다.
+- `->` 화살표 구문으로 짧게 썼다.
 
-추가 조건을 부여하는 가드 조건 예시도 살펴보자.
+조건을 더 붙이는 가드 조건 예시도 보자.
 
 ```java
 public static String categorizeNumber(Integer number) {
@@ -64,19 +60,14 @@ public static String categorizeNumber(Integer number) {
 }
 ```
 
-이 예시에서는 when 키워드를 사용하여 추가적인 조건을 지정했다.
+`when` 키워드로 조건을 추가했다.
 
-패턴 매칭을 사용한 switch 문은 코드의 가독성을 높이고, 타입 관련 로직을 더 안전하고 간결하게 작성할 수 있게 해 준다.
+타입에 따라 분기하는 로직을 더 안전하고 짧게 쓸 수 있게 된 셈이다.
 
 ---
 
-### **정리**
+### 정리
 
-기존 switch문은 Object 타입에 따른 분기처리가 불가능하다는 점,
+기존 switch문은 Object 타입에 따라 분기할 수 없고, null이 들어오면 NullPointerException이 나는 등의 단점 때문에 잘 안 쓰게 됐다.
 
-null이 들어갈 경우 NullPointerException 오류가 발생한다는 점 등의 단점 때문에
-
-사용하는 경우가 많지 않았다.
-
-그러나 Pattern Matching을 통한 switch문의 개선으로 이전보다 활용도가 늘어났다고 생각하고 덕분에  
-switch문을 활용하는 개발자들도 증가할 것 같다.
+그런데 Pattern Matching으로 switch문이 개선되면서 전보다 쓸 데가 많아졌다고 생각하고, 덕분에 switch문을 쓰는 개발자들도 늘어날 것 같다.
