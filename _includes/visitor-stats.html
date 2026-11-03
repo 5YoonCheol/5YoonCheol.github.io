@@ -1,19 +1,22 @@
 {%- comment -%}
-  사이드바 방문자 수 (GoatCounter). _config.yml 의 analytics.goatcounter.id 가 있을 때만 보인다.
+  홈 상단 방문자 수 (GoatCounter). _config.yml 의 analytics.goatcounter.id 가 있을 때만 보인다.
 {%- endcomment -%}
 {% if site.analytics.goatcounter.id %}
-  <div class="visitor-stats w-100" id="visitor-stats">
-    <div class="visitor-stat">
-      <span class="label">오늘</span>
-      <span class="value" data-range="today">-</span>
-    </div>
-    <div class="visitor-stat">
-      <span class="label">이번 달</span>
-      <span class="value" data-range="month">-</span>
-    </div>
-    <div class="visitor-stat">
-      <span class="label">전체</span>
-      <span class="value" data-range="total">-</span>
+  <div class="visitor-stats" id="visitor-stats">
+    <div class="visitor-stats-title"><i class="far fa-eye"></i> 방문자</div>
+    <div class="visitor-stats-row">
+      <div class="visitor-stat">
+        <span class="label">오늘</span>
+        <span class="value" data-range="today">-</span>
+      </div>
+      <div class="visitor-stat">
+        <span class="label">이번 달</span>
+        <span class="value" data-range="month">-</span>
+      </div>
+      <div class="visitor-stat">
+        <span class="label">전체</span>
+        <span class="value" data-range="total">-</span>
+      </div>
     </div>
   </div>
 
