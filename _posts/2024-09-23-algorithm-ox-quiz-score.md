@@ -1,7 +1,7 @@
 ---
 title: "OX문제 점수 계산 (Java)"
 date: 2024-09-23 11:11:41 +0900
-categories: ["Algorithm"]
+categories: [Algorithm, Problem]
 tags: ["java", "ox문제-풀기", "점수계산", "코테-대비"]
 tistory_url: https://yoon-ssi.tistory.com/62
 render_with_liquid: false

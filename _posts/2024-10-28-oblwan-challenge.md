@@ -1,7 +1,7 @@
 ---
 title: "오블완 챌린지"
 date: 2024-10-28 21:01:09 +0900
-categories: ["ETC"]
+categories: [ETC, Essay]
 tags: ["오블완-챌린지"]
 tistory_url: https://yoon-ssi.tistory.com/104
 render_with_liquid: false

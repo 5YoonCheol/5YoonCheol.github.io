@@ -1,10 +1,14 @@
 ---
 title: "[포브스] 2025년 모두가 반드시 준비해야 할 10가지 AI 트렌드"
 date: 2024-11-24 10:00:37 +0900
-categories: ["ETC"]
+categories: [ETC, Trend]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/125
 render_with_liquid: false
+---
+
+Forbes에 실린 2025년 AI 트렌드 기사가 흥미로워서 번역해 정리해봤다. 원문 링크는 글 맨 아래에 있다.
+
 ---
 
 인공 지능이 2025년에도 가장 많이 언급되는 기술이 될 것이라는 데는 의심의 여지가 없습니다.

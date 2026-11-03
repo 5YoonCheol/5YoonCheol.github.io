@@ -1,29 +1,25 @@
 ---
 title: "JUnit을 활용한 유닛 테스트"
 date: 2024-10-26 11:11:48 +0900
-categories: ["ETC"]
+categories: [Backend, Java]
 tags: ["junit", "유닛-테스트"]
 tistory_url: https://yoon-ssi.tistory.com/95
 render_with_liquid: false
 ---
 
-JUnit을 활용한 유닛 테스트는 자바 애플리케이션에서 개별 메서드나 클래스의 동작이 의도한 대로 수행되는지 확인하기 위한 테스트를 작성하는 방식이다.
+유닛 테스트는 메서드나 클래스 하나하나가 의도대로 동작하는지 확인하는 테스트다. 자바에서는 보통 JUnit으로 작성한다.
 
-JUnit은 자바에서 널리 사용되는 테스트 프레임워크로, 단위 테스트를 쉽게 작성하고 실행할 수 있게 도와준다.
-
-오늘 포스팅에서는 JUnit 테스트를 작성하는 기본적인 방법과 핵심 개념에 대해 알아보자.
+이번엔 JUnit으로 테스트를 작성하는 기본적인 방법을 정리해보자.
 
 ---
 
-### 1. **JUnit 설정**
+### 1. JUnit 설정
 
-JUnit을 사용하기 위해서는 프로젝트에 JUnit 라이브러리를 추가해야 한다.
+먼저 프로젝트에 JUnit 라이브러리를 추가해야 한다. 최신 버전은 JUnit 5이고, JUnit Jupiter라는 모듈을 쓴다.
 
-최신 버전은 **JUnit 5**인데, JUnit Jupiter라는 모듈을 사용한다.
+#### Maven
 
-#### Maven 설정 예시
-
-만약 Maven 프로젝트를 사용한다면, pom.xml 파일에 다음과 같이 의존성을 추가할 수 있다.
+pom.xml에 의존성을 추가한다.
 
 ```shell
 <dependencies>
@@ -42,9 +38,9 @@ JUnit을 사용하기 위해서는 프로젝트에 JUnit 라이브러리를 추�
 </dependencies>
 ```
 
-#### Gradle 설정 예시
+#### Gradle
 
-Gradle을 사용하는 경우 build.gradle 파일에 다음과 같이 추가한다.
+build.gradle에는 이렇게 추가한다.
 
 ```shell
 testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
@@ -53,17 +49,19 @@ testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
 
 ---
 
-### 2. **JUnit 테스트 기본 구조**
+### 2. 기본 구조
 
-JUnit 테스트는 기본적으로 다음과 같은 구조로 작성된다.
+테스트는 대략 이런 식으로 짠다.
 
-1. **테스트 클래스**: 테스트하려는 클래스에 대응하는 클래스를 생성한다.
-2. **테스트 메서드**: 개별 메서드를 테스트하기 위해 여러 테스트 메서드를 작성한다.
-3. **어노테이션**: @Test 어노테이션을 사용해 테스트 메서드임을 명시한다.
+1. 테스트 클래스: 테스트할 클래스마다 짝이 되는 테스트 클래스를 만든다.
+2. 테스트 메서드: 확인하고 싶은 동작마다 테스트 메서드를 만든다.
+3. 어노테이션: 테스트 메서드에는 @Test를 붙인다.
 
 ---
 
-### 3. **JUnit 테스트 예시**
+### 3. 예시
+
+더하기와 0으로 나누기를 테스트해보자.
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -94,10 +92,11 @@ public class CalculatorTest {
 
 ---
 
-### 4. **주요 JUnit 어노테이션**
+### 4. 자주 쓰는 어노테이션
 
-- **@Test**: 테스트 메서드로 선언. 이 어노테이션이 붙은 메서드는 JUnit에 의해 자동으로 실행된다.
-- **@BeforeEach**: 각 테스트 메서드가 실행되기 전에 호출되는 메서드. 주로 테스트 환경 설정에 사용한다.
+@Test가 붙은 메서드는 JUnit이 알아서 실행한다. 여기에 테스트 전후로 뭔가 해야 할 때 쓰는 어노테이션들이 있다.
+
+@BeforeEach는 각 테스트 메서드가 돌기 전에 매번 실행된다. 테스트 환경을 준비할 때 쓴다.
 
 ```java
 @BeforeEach
@@ -106,7 +105,7 @@ public void setUp() {
 }
 ```
 
-- **@AfterEach**: 각 테스트 메서드 실행 후 호출되는 메서드. 테스트 후 정리 작업에 사용한다.
+@AfterEach는 각 테스트 메서드가 끝난 뒤에 매번 실행된다. 정리 작업에 쓴다.
 
 ```java
 @AfterEach
@@ -115,7 +114,7 @@ public void tearDown() {
 }
 ```
 
-- **@BeforeAll**: 모든 테스트가 실행되기 전에 한 번 실행. 주로 공유 자원 초기화에 사용한다.
+@BeforeAll은 모든 테스트가 돌기 전에 딱 한 번 실행된다. 공유 자원을 초기화할 때 쓴다.
 
 ```java
 @BeforeAll
@@ -124,7 +123,7 @@ public static void init() {
 }
 ```
 
-- **@AfterAll**: 모든 테스트가 끝난 후 한 번 실행한다.
+@AfterAll은 모든 테스트가 끝난 뒤에 한 번 실행된다.
 
 ```java
 @AfterAll
@@ -135,43 +134,41 @@ public static void cleanup() {
 
 ---
 
-### 5. **Assertions (단언문)**
+### 5. Assertions (단언문)
 
-JUnit 테스트에서 **Assertions**는 테스트 결과를 확인하는 방법이다.
+테스트 결과를 확인하는 방법이다. 예상한 값과 실제 결과를 비교해서 테스트가 성공했는지 판단한다.
 
-예상된 값과 실제 결과를 비교해 테스트가 성공했는지 확인한다.
-
-- **assertEquals(expected, actual)**: 예상 값과 실제 값이 같은지 확인.
+assertEquals(expected, actual)는 예상 값과 실제 값이 같은지 본다.
 
 ```java
 assertEquals(5, calc.add(2, 3));
 ```
 
-- **assertTrue(condition)**: 조건이 참인지 확인.
+assertTrue(condition)는 조건이 참인지 본다.
 
 ```java
 assertTrue(result > 0);
 ```
 
-- **assertFalse(condition)**: 조건이 거짓인지 확인.
+assertFalse(condition)는 조건이 거짓인지 본다.
 
 ```java
 assertFalse(result < 0);
 ```
 
-- **assertNull(object)**: 객체가 null인지 확인.
+assertNull(object)는 객체가 null인지 본다.
 
 ```java
 assertNull(someObject);
 ```
 
-- **assertNotNull(object)**: 객체가 null이 아닌지 확인.
+assertNotNull(object)는 객체가 null이 아닌지 본다.
 
 ```java
 assertNotNull(someObject);
 ```
 
-- **assertThrows(expectedException.class, executable)**: 특정 예외가 발생하는지 확인.
+assertThrows(expectedException.class, executable)는 특정 예외가 발생하는지 본다.
 
 ```java
 assertThrows(ArithmeticException.class, () -> calc.divide(10, 0));
@@ -179,11 +176,9 @@ assertThrows(ArithmeticException.class, () -> calc.divide(10, 0));
 
 ---
 
-### 6. **테스트 스위트(Test Suite)**
+### 6. 테스트 묶기
 
-JUnit은 여러 테스트 클래스를 하나의 테스트 스위트로 묶어서 한 번에 실행할 수 있다.
-
-이를 통해 관련된 테스트를 그룹화할 수 있다.
+관련된 테스트들을 묶어서 한 번에 돌릴 수도 있다. 아래는 @Nested로 더하기 테스트와 나누기 테스트를 그룹으로 나눈 예시다.
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -222,11 +217,9 @@ public class MathTestSuite {
 
 ---
 
-### 7. **Mocking과 의존성 주입 테스트**
+### 7. Mock으로 의존성 대신하기
 
-때로는 유닛 테스트에서 실제 객체 대신 **Mock 객체**를 사용해 외부 의존성을 가짜로 처리해야 할 때가 있다.
-
-이때는 **Mockito**와 같은 모킹 라이브러리를 사용할 수 있다.
+테스트할 때 실제 객체 대신 가짜(Mock) 객체를 넣어야 할 때가 있다. DB나 외부 API처럼 테스트에서 직접 부르기 곤란한 의존성이 그렇다. 이럴 땐 Mockito 같은 라이브러리를 쓴다.
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -254,8 +247,8 @@ public class UserServiceTest {
 
 ---
 
-### 8. **JUnit의 장점**
+### 8. 왜 쓰나
 
-- **자동화된 테스트**: 개발 중 자주 테스트를 실행할 수 있어 빠르게 피드백을 받을 수 있음.
-- **리그레션 방지**: 기존 기능에 문제가 생기지 않았는지 확인할 수 있음.
-- **코드 품질 향상**: 단위 테스트를 통해 코드가 의도한 대로 작동하는지 보장할 수 있음.
+- 개발하면서 테스트를 자주 돌릴 수 있어서 피드백이 빠르다.
+- 코드를 고친 뒤에 기존 기능이 깨지지 않았는지(리그레션) 바로 확인할 수 있다.
+- 코드가 의도대로 동작한다는 걸 테스트로 보장할 수 있다.

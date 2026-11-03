@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 피보나치 수열"
 date: 2024-09-17 07:07:54 +0900
-categories: ["Algorithm"]
+categories: [Algorithm, Problem]
 tags: ["java", "구현", "피보나치-수열"]
 tistory_url: https://yoon-ssi.tistory.com/56
 render_with_liquid: false

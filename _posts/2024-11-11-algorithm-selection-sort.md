@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 선택 정렬 (Selection Sort)"
 date: 2024-11-11 10:10:01 +0900
-categories: ["Algorithm"]
+categories: [Algorithm, Sort]
 tags: ["선택-정렬", "알고리즘"]
 tistory_url: https://yoon-ssi.tistory.com/112
 render_with_liquid: false
@@ -17,9 +17,9 @@ render_with_liquid: false
 
 ### 동작 과정
 
-1. 배열에서 최소값을 찾아 첫 번째 요소와 교환합니다.
-2. 다음 단계에서는 두 번째 요소부터 끝까지의 최소값을 찾아 두 번째 요소와 교환합니다.
-3. 이러한 과정을 반복하여 배열이 모두 정렬될 때까지 진행합니다.
+1. 배열에서 최소값을 찾아 첫 번째 요소와 교환한다.
+2. 다음 단계에서는 두 번째 요소부터 끝까지의 최소값을 찾아 두 번째 요소와 교환한다.
+3. 이러한 과정을 반복하여 배열이 모두 정렬될 때까지 진행한다.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "MyBatis <if> 태그 사용법"
 date: 2024-08-03 10:29:09 +0900
-categories: ["MyBatis"]
+categories: [Backend, MyBatis]
 tags: ["if", "mybatis", "sql", "조건"]
 tistory_url: https://yoon-ssi.tistory.com/7
 render_with_liquid: false

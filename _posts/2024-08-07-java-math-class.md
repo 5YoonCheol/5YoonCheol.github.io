@@ -1,46 +1,46 @@
 ---
 title: "[Java] Math 클래스란?"
 date: 2024-08-07 22:58:00 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["class", "java", "math", "math.ceil()", "math.floor()", "math.round()", "수학", "연산", "자바"]
 tistory_url: https://yoon-ssi.tistory.com/12
 render_with_liquid: false
 ---
 
-업무를 할 때 반올림을 하기 위해 round() 메서드를 자주 활용하는데, Math 클래스는 무엇인지 제공되는 함수는 어떤 것들이 있는지 궁금해져서 정리해보기로 했다.
+업무를 할 때 반올림하려고 round() 메서드를 자주 쓰는데, Math 클래스가 정확히 뭔지, 어떤 함수들이 있는지 궁금해져서 정리해보기로 했다.
 
-**Math 클래스는 Java의 표준 라이브러리에 포함된 유틸리티 클래스이다.**
+Math 클래스는 Java 표준 라이브러리에 들어 있는 유틸리티 클래스다.
 
-수학 연산을 수행하기 위해서 다양한 메서드를 제공하고, 'Java.lang' 패키지에 속해 있기 때문에 별도의 import 없이 사용할 수 있다.
+수학 연산에 필요한 메서드를 여러 가지 제공하고, `java.lang` 패키지에 속해 있어서 따로 import 없이 쓸 수 있다.
 
-Math 클래스의 주요 기능 및 메서드를 살펴보자.
-
----
-
-### **주요 기능 및 메서드**
-
-1. **기본 산술 연산**
-   - abs(int a), abs(double a) 등: 절대값을 반환한다.
-   - max(int a, int b), min(int a, int b): 두 값 중 최대값 또는 최소값을 반환한다.
-2. **지수와 로그**
-   - pow(double a, double b): a의 b제곱을 반환한다.
-   - sqrt(double a): a의 제곱근을 반환한다.
-   - exp(double a): 자연 상수 e의 a제곱을 반환한다.
-   - log(double a): 자연 로그를 반환한다.
-   - log10(double a): 10을 밑으로 하는 로그를 반환한다.
-3. **삼각 함수**
-   - sin(double a), cos(double a), tan(double a): 각도의 사인, 코사인, 탄젠트를 반환한다.
-   - asin(double a), acos(double a), atan(double a): 아크사인, 아크코사인, 아크탄젠트를 반환한다.
-4. **반올림**
-   - ceil(double a): 올림 값을 반환한다.
-   - floor(double a): 내림 값을 반환한다.
-   - round(float a), round(double a): 반올림 값을 반환한다.
-5. **난수 생성**
-   - random(): 0.0 이상 1.0 미만의 난수를 반환한다.
+주요 메서드를 살펴보자.
 
 ---
 
-### **사용 예시**
+### 주요 메서드
+
+1. 기본 산술 연산
+   - `abs(int a)`, `abs(double a)` 등: 절대값을 반환한다.
+   - `max(int a, int b)`, `min(int a, int b)`: 두 값 중 큰 값 또는 작은 값을 반환한다.
+2. 지수와 로그
+   - `pow(double a, double b)`: a의 b제곱을 반환한다.
+   - `sqrt(double a)`: a의 제곱근을 반환한다.
+   - `exp(double a)`: 자연 상수 e의 a제곱을 반환한다.
+   - `log(double a)`: 자연 로그를 반환한다.
+   - `log10(double a)`: 밑이 10인 로그를 반환한다.
+3. 삼각 함수
+   - `sin(double a)`, `cos(double a)`, `tan(double a)`: 사인, 코사인, 탄젠트를 반환한다.
+   - `asin(double a)`, `acos(double a)`, `atan(double a)`: 아크사인, 아크코사인, 아크탄젠트를 반환한다.
+4. 반올림
+   - `ceil(double a)`: 올림 값을 반환한다.
+   - `floor(double a)`: 내림 값을 반환한다.
+   - `round(float a)`, `round(double a)`: 반올림 값을 반환한다.
+5. 난수 생성
+   - `random()`: 0.0 이상 1.0 미만의 난수를 반환한다.
+
+---
+
+### 사용 예시
 
 ```java
 public class MathExample {
@@ -102,4 +102,4 @@ public class MathExample {
 }
 ```
 
-수학 연산을 간편하게 수행할 수 있도록 도와주는 Math 클래스에 대해 알아보았다.
+수학 연산을 간편하게 할 수 있게 도와주는 Math 클래스에 대해 알아보았다.

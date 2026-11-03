@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 버블 정렬 (Bubble Sort)"
 date: 2024-11-12 10:00:23 +0900
-categories: ["Algorithm"]
+categories: [Algorithm, Sort]
 tags: ["버블-정렬", "알고리즘"]
 tistory_url: https://yoon-ssi.tistory.com/113
 render_with_liquid: false

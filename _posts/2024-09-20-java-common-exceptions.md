@@ -1,73 +1,68 @@
 ---
 title: "[Java] 대표적인 Exception 종류와 해결방법"
 date: 2024-09-20 08:08:00 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["exception", "java"]
 tistory_url: https://yoon-ssi.tistory.com/59
 render_with_liquid: false
 ---
 
-오늘 포스팅에서는 Java에서 발생하는 대표적인 예외(Exception)들과 해결방법에 대해서 알아보자.
+개발하다 보면 매일같이 만나는 게 예외다. 이번엔 Java에서 자주 보는 예외들과 각각 어떻게 대처하면 되는지 정리해보자.
 
 ---
 
 ### Exception 이란?
 
-Java에서 예외(Exception)는 프로그램 실행 중 발생할 수 있는 오류 상황을 처리하기 위한 기법이다.
+예외(Exception)는 프로그램이 실행되는 도중에 생기는 오류 상황을 처리하기 위한 장치다.
 
-예외는 Exception 클래스를 상속하며, 일반적으로 크게 **Checked Exception**과 **Unchecked Exception**으로 나눌 수 있다.
-
----
-
-### 1. **Checked Exception**
-
-Checked Exception은 컴파일 시점에서 반드시 처리해야 하는 예외이다. 예외 처리 코드(try-catch 혹은 throws)가 없으면 컴파일 오류가 발생한다. 주로 외부 자원(파일, 네트워크 등)과의 작업 중에 발생한다.
-
-**대표적인 Checked Exception**
-
-- **IOException**: 입출력 작업 중 발생하는 예외로, 파일 읽기/쓰기, 네트워크 통신 등의 작업에서 발생할 수 있다.
-- **SQLException**: 데이터베이스 관련 작업 중 발생하는 예외이다. SQL 쿼리 실행 중 오류가 발생할 때 throw된다.
-- **ClassNotFoundException**: 특정 클래스를 찾지 못했을 때 발생하는 예외로, 주로 동적 클래스 로딩 시 사용된다.
-- **FileNotFoundException**: 지정한 파일을 찾지 못할 때 발생하는 예외이다. IOException의 하위 클래스이다.
-- **InterruptedException**: 스레드가 대기 상태에서 인터럽트되었을 때 발생하는 예외이다.
-
-### 2. **Unchecked Exception (Runtime Exception)**
-
-Unchecked Exception은 컴파일러가 예외 처리를 강제하지 않는 예외이다. 즉, 발생할 가능성이 있는 예외에 대해 명시적으로 처리하지 않아도 된다.
-
-대부분의 RuntimeException은 프로그래밍 오류(논리 오류 또는 사용자 실수)로 인해 발생한다.
-
-**대표적인 Unchecked Exception**
-
-- **NullPointerException**: 참조 변수가 null일 때 해당 변수를 사용하려 하면 발생하는 예외이다.
-- **ArrayIndexOutOfBoundsException**: 배열의 인덱스가 유효 범위를 벗어났을 때 발생하는 예외이다.
-- **ArithmeticException**: 수학적 계산에서 오류가 발생했을 때 발생하는 예외이다. 예를 들어, 0으로 나누기를 시도할 때 발생한다.
-- **IllegalArgumentException**: 메소드에 잘못된 인수가 전달될 때 발생하는 예외이다.
-- **ClassCastException**: 객체를 잘못된 타입으로 캐스팅하려 할 때 발생하는 예외이다.
-- **NumberFormatException**: 문자열을 숫자로 변환할 때 해당 문자열이 숫자 형식에 맞지 않으면 발생하는 예외이다.
-
-### 3. **Error**
-
-Error는 애플리케이션이 처리할 수 없는 심각한 문제를 나타낸다. 대부분 자바 프로그램 자체에서 해결할 수 없는 상황에서 발생하며, 예외 처리로 해결할 수 없다. 예를 들어 메모리 부족 등의 시스템 수준에서 발생하는 문제이다.
-
-**대표적인 Error**
-
-- **OutOfMemoryError**: JVM의 힙 메모리가 부족할 때 발생하는 오류이다.
-- **StackOverflowError**: 메소드 호출이 너무 깊어져 스택이 넘칠 때 발생하는 오류이다. 주로 재귀 호출이 과도할 때 발생한니다.
-- **VirtualMachineError**: JVM에서 심각한 문제가 발생했을 때 발생하는 오류로, 시스템 오류에 가깝다.
+예외 클래스는 Exception을 상속하고, 크게 **Checked Exception**과 **Unchecked Exception**으로 나뉜다. 여기에 예외는 아니지만 같이 알아두면 좋은 Error도 있다.
 
 ---
 
-### 대표적인 예외들과 해결 방법
+### 1. Checked Exception
 
-### 1. **IOException**
+컴파일 시점에 반드시 처리해야 하는 예외다. try-catch로 잡든 throws로 넘기든 뭔가 하지 않으면 컴파일 자체가 안 된다. 파일이나 네트워크처럼 외부 자원을 다룰 때 주로 나온다.
 
-**발생 원인**: 파일 읽기/쓰기, 네트워크 통신 등의 입출력 작업에서 문제가 발생할 때.
+자주 보는 것들:
 
-**해결 방법**:
+- IOException: 파일 읽기/쓰기, 네트워크 통신 같은 입출력 중에 문제가 생겼을 때
+- SQLException: DB 작업 중, 예를 들어 SQL 실행하다 오류가 났을 때
+- ClassNotFoundException: 클래스를 못 찾았을 때. 주로 클래스를 동적으로 로딩할 때 나온다
+- FileNotFoundException: 지정한 파일이 없을 때. IOException의 하위 클래스다
+- InterruptedException: 대기 중인 스레드가 인터럽트됐을 때
 
-- 파일이나 네트워크 자원이 존재하는지, 권한이 있는지 확인한다.
-- 파일이 정상적으로 닫히도록 finally 블록에서 자원을 해제한다.
+### 2. Unchecked Exception (Runtime Exception)
+
+컴파일러가 처리를 강제하지 않는 예외다. 발생할 수 있어도 코드에서 꼭 잡아줄 필요는 없다.
+
+대부분은 로직 실수나 잘못된 입력 같은 프로그래밍 오류 때문에 생긴다.
+
+자주 보는 것들:
+
+- NullPointerException: null인 참조 변수를 쓰려고 할 때
+- ArrayIndexOutOfBoundsException: 배열 인덱스가 범위를 벗어났을 때
+- ArithmeticException: 0으로 나누기처럼 계산이 잘못됐을 때
+- IllegalArgumentException: 메소드에 잘못된 인자를 넘겼을 때
+- ClassCastException: 객체를 맞지 않는 타입으로 캐스팅할 때
+- NumberFormatException: 숫자 형식이 아닌 문자열을 숫자로 바꾸려 할 때
+
+### 3. Error
+
+Error는 애플리케이션이 감당할 수 없는 심각한 문제다. 메모리 부족처럼 시스템 수준에서 생기는 문제라서 예외 처리로 해결할 수 있는 성격이 아니다.
+
+- OutOfMemoryError: JVM 힙 메모리가 부족할 때
+- StackOverflowError: 메소드 호출이 너무 깊어져서 스택이 넘칠 때. 재귀를 잘못 짜면 자주 본다
+- VirtualMachineError: JVM 자체에 심각한 문제가 생겼을 때
+
+---
+
+### 예외별 원인과 해결 방법
+
+### 1. IOException
+
+파일 읽기/쓰기나 네트워크 통신처럼 입출력하다가 문제가 생기면 발생한다.
+
+파일이나 네트워크 자원이 실제로 있는지, 접근 권한은 있는지부터 확인하자. 그리고 finally 블록에서 자원을 해제해서 파일이 확실히 닫히게 해주는 게 좋다.
 
 ```java
 try {
@@ -79,15 +74,11 @@ try {
 }
 ```
 
-### 2. **SQLException**
+### 2. SQLException
 
-**발생 원인**: 데이터베이스와의 연결 또는 SQL 쿼리 실행 중 오류 발생.
+DB 연결이나 SQL 실행 중에 오류가 나면 발생한다.
 
-**해결 방법**:
-
-- SQL 쿼리 문법을 확인하고, 올바른 데이터베이스 URL 및 자격 증명을 사용한다.
-- 데이터베이스 연결이 올바르게 설정되어 있는지 확인한다.
-- 자원을 사용한 후 close() 메서드를 통해 연결을 닫아 메모리 누수를 방지한다.
+SQL 문법이 맞는지, DB URL과 계정 정보가 맞는지, 연결 설정이 제대로 됐는지 확인해보자. 다 쓴 자원은 close()로 닫아줘야 메모리 누수가 안 생긴다.
 
 ```java
 try {
@@ -101,14 +92,11 @@ try {
 }
 ```
 
-### 3. **NullPointerException**
+### 3. NullPointerException
 
-**발생 원인**: 참조 변수가 null인데 이를 사용하려 할 때 발생.
+null인 참조 변수를 쓰려고 하면 발생한다. 아마 제일 많이 보는 예외일 거다.
 
-**해결 방법**:
-
-- 객체가 null인지 먼저 확인한 후 접근한다.
-- Optional 클래스를 활용하여 null을 안전하게 처리한다.
+객체를 쓰기 전에 null인지 먼저 확인하거나, Optional을 써서 null을 안전하게 다루면 된다.
 
 ```java
 String str = null;
@@ -119,14 +107,11 @@ if (str != null) {
 }
 ```
 
-### 4. **ArrayIndexOutOfBoundsException**
+### 4. ArrayIndexOutOfBoundsException
 
-**발생 원인**: 배열의 유효 범위를 벗어난 인덱스에 접근할 때 발생.
+배열 범위를 벗어난 인덱스에 접근하면 발생한다.
 
-**해결 방법**:
-
-- 배열의 인덱스가 유효한 범위 내에 있는지 체크한다.
-- 배열의 길이를 확인한 후 접근한다.
+인덱스가 배열 길이 안에 있는지 확인하고 접근하면 된다.
 
 ```java
 int[] arr = new int[5];
@@ -138,13 +123,11 @@ if (index < arr.length) {
 }
 ```
 
-### 5. **ArithmeticException**
+### 5. ArithmeticException
 
-**발생 원인**: 0으로 나누는 등의 잘못된 수학 연산이 발생할 때.
+0으로 나누는 것처럼 잘못된 연산을 하면 발생한다.
 
-**해결 방법**:
-
-- 나누기 연산 전에 분모가 0인지 확인한다.
+나누기 전에 분모가 0인지 확인하자.
 
 ```java
 int a = 10;
@@ -156,14 +139,11 @@ if (b != 0) {
 }
 ```
 
-### 6. **ClassCastException**
+### 6. ClassCastException
 
-**발생 원인**: 잘못된 형 변환을 시도할 때 발생.
+타입이 맞지 않는 형 변환을 하면 발생한다.
 
-**해결 방법**:
-
-- 형 변환 전에 객체의 타입을 확인한다.
-- instanceof 연산자를 사용하여 올바른 타입인지 체크한다.
+캐스팅하기 전에 instanceof로 타입을 먼저 확인하면 된다.
 
 ```java
 Object obj = "Hello";
@@ -175,14 +155,11 @@ if (obj instanceof String) {
 }
 ```
 
-### 7. **FileNotFoundException**
+### 7. FileNotFoundException
 
-**발생 원인**: 지정한 파일을 찾을 수 없을 때 발생.
+지정한 파일을 찾을 수 없을 때 발생한다.
 
-**해결 방법**:
-
-- 파일 경로가 정확한지 확인한다.
-- 파일이 존재하는지 확인하고, 파일에 접근할 권한이 있는지 점검한다.
+경로가 정확한지, 파일이 정말 있는지, 접근 권한은 있는지 확인해보자.
 
 ```java
 try {

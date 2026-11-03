@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 중복문자 제거하기"
 date: 2024-09-15 06:06:27 +0900
-categories: ["Algorithm"]
+categories: [Algorithm, Problem]
 tags: ["java", "중복-문자-제거"]
 tistory_url: https://yoon-ssi.tistory.com/54
 render_with_liquid: false

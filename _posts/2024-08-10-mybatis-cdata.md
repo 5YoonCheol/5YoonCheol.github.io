@@ -1,7 +1,7 @@
 ---
 title: "[MyBatis] CDATA 사용법"
 date: 2024-08-10 03:14:18 +0900
-categories: ["MyBatis"]
+categories: [Backend, MyBatis]
 tags: ["cdata", "mybatis", "문자열치환"]
 tistory_url: https://yoon-ssi.tistory.com/15
 render_with_liquid: false
