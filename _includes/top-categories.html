@@ -1,0 +1,22 @@
+{%- comment -%}
+  대분류 이름 목록을 top_categories 변수에 담는다.
+  _data/category_meta.yml 순서를 먼저 따르고, 나머지는 이름순으로 뒤에 붙인다.
+{%- endcomment -%}
+{%- assign _all_tops = '' | split: '' -%}
+{%- for _post in site.posts -%}
+  {%- if _post.categories.size > 0 -%}
+    {%- assign _all_tops = _all_tops | push: _post.categories[0] -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign _all_tops = _all_tops | uniq | sort_natural -%}
+{%- assign top_categories = '' | split: '' -%}
+{%- for _meta in site.data.category_meta -%}
+  {%- if _all_tops contains _meta.name -%}
+    {%- assign top_categories = top_categories | push: _meta.name -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- for _top in _all_tops -%}
+  {%- unless top_categories contains _top -%}
+    {%- assign top_categories = top_categories | push: _top -%}
+  {%- endunless -%}
+{%- endfor -%}

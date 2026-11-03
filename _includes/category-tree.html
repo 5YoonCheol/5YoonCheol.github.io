@@ -1,0 +1,56 @@
+<!-- 사이드바 카테고리 트리 -->
+{% include top-categories.html %}
+{% assign _current_top = page.categories[0] %}
+{% assign _current_sub = page.categories[1] %}
+{% if page.layout == 'category' %}
+  {% assign _current_top = page.title %}
+{% endif %}
+
+<div class="category-tree w-100">
+  <div class="category-tree-title">
+    <i class="fa-fw fas fa-folder-tree"></i>
+    <span>카테고리</span>
+  </div>
+  <ul class="category-tree-list">
+    {% for top in top_categories %}
+      {% assign top_posts = site.categories[top] | where_exp: 'p', 'p.categories[0] == top' %}
+      {% assign meta = site.data.category_meta | where: 'name', top | first %}
+      {% assign subs = '' | split: '' %}
+      {% for p in top_posts %}
+        {% if p.categories[1] %}
+          {% assign subs = subs | push: p.categories[1] %}
+        {% endif %}
+      {% endfor %}
+      {% assign subs = subs | uniq | sort_natural %}
+      {% capture top_url %}/categories/{{ top | slugify | url_encode }}/{% endcapture %}
+      <li>
+        <details{% if top == _current_top %} open{% endif %}>
+          <summary class="{% if top == _current_top %}active{% endif %}">
+            <i class="fa-fw {{ meta.icon | default: 'far fa-folder' }}"></i>
+            <span class="name">{{ top }}</span>
+            <span class="count">{{ top_posts.size }}</span>
+            <i class="caret fas fa-angle-right"></i>
+          </summary>
+          <ul>
+            <li>
+              <a href="{{ top_url | relative_url }}">전체 보기</a>
+            </li>
+            {% for sub in subs %}
+              {% assign sub_posts = top_posts | where_exp: 'p', 'p.categories[1] == sub' %}
+              {% capture sub_url %}/categories/{{ sub | slugify | url_encode }}/{% endcapture %}
+              <li>
+                <a
+                  href="{{ sub_url | relative_url }}"
+                  class="{% if top == _current_top and sub == _current_sub %}active{% endif %}"
+                >
+                  <span class="name">{{ sub }}</span>
+                  <span class="count">{{ sub_posts.size }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </details>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
