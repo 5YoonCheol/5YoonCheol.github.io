@@ -61,7 +61,7 @@ analytics:
   google:
     id: # fill in your Google Analytics ID
   goatcounter:
-    id: # GoatCounter 사이트 코드 (예: xxx.goatcounter.com 의 xxx). 넣으면 방문자 수와 글 조회수가 켜진다
+    id: 5yooncheol # GoatCounter 사이트 코드 (5yooncheol.goatcounter.com). 방문자 수와 글 조회수에 사용
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
