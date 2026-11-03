@@ -19,7 +19,7 @@ title: 새벽 2시의 커밋 # the main title
 tagline: 모두가 잠든 시간에 남기는 개발 기록 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  늦은 밤까지 붙잡고 있던 문제와 그 끝에 배운 것을 커밋하듯 하나씩 남기는 개발 블로그입니다.
+  다들 잠든 새벽, 버그와 씨름하다 알게 된 것들을 한 줄씩 커밋합니다.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -61,7 +61,7 @@ analytics:
   google:
     id: # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: # GoatCounter 사이트 코드 (예: xxx.goatcounter.com 의 xxx). 넣으면 방문자 수와 글 조회수가 켜진다
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -75,7 +75,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter # 위 analytics.goatcounter.id 가 있을 때만 동작
 
 # Prefer color scheme setting.
 #

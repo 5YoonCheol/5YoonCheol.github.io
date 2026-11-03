@@ -1,0 +1,49 @@
+{%- comment -%}
+  사이드바 방문자 수 (GoatCounter). _config.yml 의 analytics.goatcounter.id 가 있을 때만 보인다.
+{%- endcomment -%}
+{% if site.analytics.goatcounter.id %}
+  <div class="visitor-stats w-100" id="visitor-stats">
+    <div class="visitor-stat">
+      <span class="label">오늘</span>
+      <span class="value" data-range="today">-</span>
+    </div>
+    <div class="visitor-stat">
+      <span class="label">이번 달</span>
+      <span class="value" data-range="month">-</span>
+    </div>
+    <div class="visitor-stat">
+      <span class="label">전체</span>
+      <span class="value" data-range="total">-</span>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const box = document.getElementById('visitor-stats');
+      if (!box) return;
+
+      const base = 'https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/TOTAL.json';
+      // 블로그 기준 시간대(한국)로 오늘 날짜를 만든다. en-CA 형식은 YYYY-MM-DD.
+      const today = new Intl.DateTimeFormat('en-CA', { timeZone: '{{ site.timezone | default: "Asia/Seoul" }}' }).format(new Date());
+      const ranges = {
+        today: `?start=${today}`,
+        month: `?start=${today.slice(0, 8)}01`,
+        total: ''
+      };
+
+      Object.entries(ranges).forEach(([key, query]) => {
+        const el = box.querySelector(`[data-range="${key}"]`);
+        fetch(base + query)
+          .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+          .then((data) => {
+            const count = Number(String(data.count).replace(/\D/g, ''));
+            el.textContent = new Intl.NumberFormat('ko-KR').format(count);
+          })
+          .catch(() => {
+            // 해당 기간 방문 기록이 없으면 404가 온다.
+            el.textContent = '0';
+          });
+      });
+    });
+  </script>
+{% endif %}
