@@ -1,0 +1,32 @@
+# 홈 화면 카테고리 카드와 사이드바 트리에서 쓰는 대분류 정보.
+# 여기 적힌 순서대로 보여 주고, 목록에 없는 대분류는 맨 뒤에 붙는다.
+- name: Backend
+  icon: fas fa-server
+  desc: Java, Spring, MyBatis
+- name: Database
+  icon: fas fa-database
+  desc: MySQL, NoSQL
+- name: Architecture
+  icon: fas fa-sitemap
+  desc: MSA, 메시징, 설계
+- name: DevOps
+  icon: fas fa-infinity
+  desc: CI/CD, 컨테이너, 클라우드
+- name: CS
+  icon: fas fa-microchip
+  desc: 운영체제, 네트워크
+- name: Algorithm
+  icon: fas fa-code
+  desc: 문제 풀이, 정렬, 탐색
+- name: Security
+  icon: fas fa-shield-halved
+  desc: 인증, 암호화, 웹 보안
+- name: Frontend
+  icon: fab fa-js
+  desc: JavaScript, Vue
+- name: TroubleShooting
+  icon: fas fa-bug
+  desc: 겪은 문제와 해결 기록
+- name: ETC
+  icon: fas fa-lightbulb
+  desc: 트렌드, 에세이
