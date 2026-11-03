@@ -1,6 +1,6 @@
 ---
 title: "MyBatis <choose> 태그 사용법 및 <if> 태그와의 차이"
-date: 2024-08-04 15:33:47 +0900
+date: 2024-08-04 02:00:00 +0900
 categories: [Backend, MyBatis]
 tags: ["choose", "if", "mybatis", "사용법", "차이"]
 tistory_url: https://yoon-ssi.tistory.com/8

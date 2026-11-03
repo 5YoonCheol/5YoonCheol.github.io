@@ -1,6 +1,6 @@
 ---
 title: "[MySql] 데이터 마스킹 처리 방법"
-date: 2024-10-05 09:09:17 +0900
+date: 2024-10-05 02:00:00 +0900
 categories: [Database, MySQL]
 tags: ["masking", "mysql", "데이터-마스킹"]
 tistory_url: https://yoon-ssi.tistory.com/74

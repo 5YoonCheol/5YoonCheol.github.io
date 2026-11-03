@@ -1,6 +1,6 @@
 ---
 title: "[SpringBoot] Proxy 설정 방법"
-date: 2024-11-15 10:00:14 +0900
+date: 2024-11-15 02:00:00 +0900
 categories: [Backend, Spring]
 tags: ["proxy-설정", "spring"]
 tistory_url: https://yoon-ssi.tistory.com/116

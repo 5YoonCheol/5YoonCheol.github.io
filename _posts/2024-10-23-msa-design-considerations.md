@@ -1,6 +1,6 @@
 ---
 title: "MSA 설계 시 고려사항, 개발 도입"
-date: 2024-10-23 07:07:01 +0900
+date: 2024-10-23 02:00:00 +0900
 categories: [Architecture, MSA]
 tags: ["msa-설계", "개발-도입"]
 tistory_url: https://yoon-ssi.tistory.com/92

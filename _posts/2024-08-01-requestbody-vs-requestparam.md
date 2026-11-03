@@ -1,6 +1,6 @@
 ---
 title: "@RequestBody와 @RequestParam 어노테이션 역할과 차이점"
-date: 2024-08-01 18:34:27 +0900
+date: 2024-08-01 02:00:00 +0900
 categories: [Backend, Spring]
 tags: ["annotation", "java", "requestbody", "requestparam", "spring", "springboot", "어노테이션"]
 tistory_url: https://yoon-ssi.tistory.com/5

@@ -1,6 +1,6 @@
 ---
 title: "[ETC] OAuth 1.0과 2.0의 차이"
-date: 2024-09-09 07:00:53 +0900
+date: 2024-09-09 02:00:00 +0900
 categories: [Security, Auth]
 tags: ["oauth-1.0", "oauth-2.0", "차이"]
 tistory_url: https://yoon-ssi.tistory.com/48

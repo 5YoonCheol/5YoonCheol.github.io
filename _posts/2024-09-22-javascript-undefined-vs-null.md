@@ -1,6 +1,6 @@
 ---
 title: "[JavaScript] undefined와 null의 차이"
-date: 2024-09-22 02:02:06 +0900
+date: 2024-09-22 02:00:00 +0900
 categories: [Frontend, JavaScript]
 tags: ["null", "undefined", "차이"]
 tistory_url: https://yoon-ssi.tistory.com/61

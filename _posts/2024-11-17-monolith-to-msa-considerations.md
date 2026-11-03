@@ -1,6 +1,6 @@
 ---
 title: "모놀리식 아키텍쳐에서 MSA로 전환 시 고려해야 할 점"
-date: 2024-11-17 10:00:42 +0900
+date: 2024-11-17 02:00:00 +0900
 categories: [Architecture, MSA]
 tags: ["msa", "모놀리식-아키텍쳐", "전환"]
 tistory_url: https://yoon-ssi.tistory.com/118

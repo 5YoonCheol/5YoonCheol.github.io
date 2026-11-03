@@ -1,6 +1,6 @@
 ---
 title: "[네트워크] Load Balancer (로드 밸런서)"
-date: 2024-11-01 10:00:49 +0900
+date: 2024-11-01 02:00:00 +0900
 categories: [CS, Network]
 tags: ["load-balancer", "로드-밸런서"]
 tistory_url: https://yoon-ssi.tistory.com/101

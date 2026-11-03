@@ -1,6 +1,6 @@
 ---
 title: "[ETC] 가독성이 좋은 코드란 무엇일까?"
-date: 2024-09-04 09:09:16 +0900
+date: 2024-09-04 02:00:00 +0900
 categories: [ETC, Essay]
 tags: ["가독성", "코드", "코딩"]
 tistory_url: https://yoon-ssi.tistory.com/42

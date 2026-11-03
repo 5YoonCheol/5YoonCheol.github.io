@@ -1,6 +1,6 @@
 ---
 title: "Kafka란?"
-date: 2024-10-18 08:08:02 +0900
+date: 2024-10-18 02:00:00 +0900
 categories: [Architecture, Messaging]
 tags: ["apache-kafka", "kafka", "분산형-스트리밍-플랫폼"]
 tistory_url: https://yoon-ssi.tistory.com/87

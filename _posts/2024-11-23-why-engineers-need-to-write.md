@@ -1,6 +1,6 @@
 ---
 title: "Why Engineers Need To Write (개발자가 글을 써야 하는 이유)"
-date: 2024-11-23 10:00:46 +0900
+date: 2024-11-23 02:00:00 +0900
 categories: [ETC, Essay]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/124

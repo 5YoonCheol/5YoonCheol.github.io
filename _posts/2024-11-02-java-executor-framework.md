@@ -1,6 +1,6 @@
 ---
 title: "[Java] Executor 프레임워크"
-date: 2024-11-02 10:00:22 +0900
+date: 2024-11-02 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["executor", "java"]
 tistory_url: https://yoon-ssi.tistory.com/102

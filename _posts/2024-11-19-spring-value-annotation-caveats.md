@@ -1,6 +1,6 @@
 ---
 title: "[Spring] @Value 어노테이션 주의점"
-date: 2024-11-19 10:00:01 +0900
+date: 2024-11-19 02:00:00 +0900
 categories: [Backend, Spring]
 tags: ["@value-어노테이션"]
 tistory_url: https://yoon-ssi.tistory.com/120

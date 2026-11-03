@@ -1,6 +1,6 @@
 ---
 title: "SpringBoot 프로젝트에서 MyBatis 설정하기"
-date: 2024-07-30 17:47:38 +0900
+date: 2024-07-30 02:00:00 +0900
 categories: [Backend, MyBatis]
 tags: ["mybatis", "springboot", "xml", "설정"]
 tistory_url: https://yoon-ssi.tistory.com/3

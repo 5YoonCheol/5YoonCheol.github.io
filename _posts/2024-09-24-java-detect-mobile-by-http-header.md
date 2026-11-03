@@ -1,6 +1,6 @@
 ---
 title: "[Java] HTTP 헤더를 통해 모바일 여부 판단하기"
-date: 2024-09-24 10:10:27 +0900
+date: 2024-09-24 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["getheader()", "모바일여부"]
 tistory_url: https://yoon-ssi.tistory.com/64

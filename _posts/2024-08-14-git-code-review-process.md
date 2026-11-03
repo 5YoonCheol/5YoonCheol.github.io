@@ -1,6 +1,6 @@
 ---
 title: "[Git] Git을 활용한 코드 리뷰 프로세스"
-date: 2024-08-14 10:28:28 +0900
+date: 2024-08-14 02:00:00 +0900
 categories: [DevOps, Git]
 tags: ["codereview", "git", "pr", "깃", "코드리뷰", "풀리퀘스트", "협업"]
 tistory_url: https://yoon-ssi.tistory.com/21

@@ -1,6 +1,6 @@
 ---
 title: "[알고리즘] 소수 구하기 (에라토스테네스 체)"
-date: 2024-09-18 10:10:33 +0900
+date: 2024-09-18 02:00:00 +0900
 categories: [Algorithm, Problem]
 tags: ["java", "소수-구하기", "알고리즘", "에라토스테네스-체"]
 tistory_url: https://yoon-ssi.tistory.com/57

@@ -1,6 +1,6 @@
 ---
 title: "[Spring] Batch를 사용한 배치 프로그램 구현"
-date: 2024-08-15 13:32:52 +0900
+date: 2024-08-15 02:00:00 +0900
 categories: [Backend, Spring]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/20

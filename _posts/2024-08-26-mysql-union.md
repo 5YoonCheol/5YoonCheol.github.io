@@ -1,6 +1,6 @@
 ---
 title: "[MySql] UNION이란?"
-date: 2024-08-26 04:04:15 +0900
+date: 2024-08-26 02:00:00 +0900
 categories: [Database, MySQL]
 tags: ["mysql", "union", "union-all"]
 tistory_url: https://yoon-ssi.tistory.com/33

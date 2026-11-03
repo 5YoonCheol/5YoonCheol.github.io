@@ -1,6 +1,6 @@
 ---
 title: "[ETC] WS(Web Server)와 WAS(Web Application Server)의 차이"
-date: 2024-09-07 10:00:57 +0900
+date: 2024-09-07 02:00:00 +0900
 categories: [CS, Network]
 tags: ["was", "ws", "차이", "특징"]
 tistory_url: https://yoon-ssi.tistory.com/46

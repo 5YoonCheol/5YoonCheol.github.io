@@ -1,6 +1,6 @@
 ---
 title: "[MySql] DATE_FORMAT 함수"
-date: 2024-08-30 12:12:57 +0900
+date: 2024-08-30 02:00:00 +0900
 categories: [Database, MySQL]
 tags: ["date_format", "mysql", "날짜-포맷"]
 tistory_url: https://yoon-ssi.tistory.com/37

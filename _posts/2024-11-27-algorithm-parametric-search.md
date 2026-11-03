@@ -1,6 +1,6 @@
 ---
 title: "[알고리즘] 파라메트릭 서치(Parametric Search) 알고리즘"
-date: 2024-11-27 10:00:19 +0900
+date: 2024-11-27 02:00:00 +0900
 categories: [Algorithm, Search]
 tags: ["parametric-search"]
 tistory_url: https://yoon-ssi.tistory.com/128

@@ -1,6 +1,6 @@
 ---
 title: "[OS] 프로세스와 스레드"
-date: 2024-10-28 10:00:05 +0900
+date: 2024-10-28 02:00:00 +0900
 categories: [CS, OS]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/97

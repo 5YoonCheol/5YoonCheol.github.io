@@ -1,6 +1,6 @@
 ---
 title: "[Vue] DataTable 사용하기"
-date: 2024-09-02 09:09:27 +0900
+date: 2024-09-02 02:00:00 +0900
 categories: [Frontend, Vue]
 tags: ["datatable", "vue"]
 tistory_url: https://yoon-ssi.tistory.com/40

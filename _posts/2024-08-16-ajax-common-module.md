@@ -1,6 +1,6 @@
 ---
 title: "[Trouble Shooting] Ajax 공통화 작업"
-date: 2024-08-16 12:30:44 +0900
+date: 2024-08-16 02:00:00 +0900
 categories: [TroubleShooting, Frontend]
 tags: ["ajax", "공통화", "문제해결", "처리방식", "커스터마이징"]
 tistory_url: https://yoon-ssi.tistory.com/22

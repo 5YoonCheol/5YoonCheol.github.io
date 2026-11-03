@@ -1,6 +1,6 @@
 ---
 title: "데이터 분리보관 및 DB 마스킹"
-date: 2024-10-03 06:06:21 +0900
+date: 2024-10-03 02:00:00 +0900
 categories: [Security, Encryption]
 tags: ["db-마스킹", "데이터-분리보관"]
 tistory_url: https://yoon-ssi.tistory.com/72

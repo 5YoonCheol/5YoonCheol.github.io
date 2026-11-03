@@ -1,6 +1,6 @@
 ---
 title: "LLM이란?"
-date: 2024-10-20 10:10:40 +0900
+date: 2024-10-20 02:00:00 +0900
 categories: [ETC, Trend]
 tags: ["large-language-model", "llm"]
 tistory_url: https://yoon-ssi.tistory.com/89

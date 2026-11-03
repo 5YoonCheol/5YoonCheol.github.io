@@ -1,6 +1,6 @@
 ---
 title: "[Spring] @ExceptionHandler 이란?"
-date: 2024-11-20 10:00:28 +0900
+date: 2024-11-20 02:00:00 +0900
 categories: [Backend, Spring]
 tags: ["@exceptionhandler"]
 tistory_url: https://yoon-ssi.tistory.com/121

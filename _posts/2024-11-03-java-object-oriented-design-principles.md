@@ -1,6 +1,6 @@
 ---
 title: "[Java] 객체 지향 설계 원칙"
-date: 2024-11-03 10:00:50 +0900
+date: 2024-11-03 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["java", "객체-지향", "설계-원칙"]
 tistory_url: https://yoon-ssi.tistory.com/103

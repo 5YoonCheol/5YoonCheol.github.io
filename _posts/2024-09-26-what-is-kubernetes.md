@@ -1,6 +1,6 @@
 ---
 title: "쿠버네티스(Kubernetes)란?"
-date: 2024-09-26 08:26:54 +0900
+date: 2024-09-26 02:00:00 +0900
 categories: [DevOps, Container]
 tags: ["kubernetes", "쿠버네티스"]
 tistory_url: https://yoon-ssi.tistory.com/65

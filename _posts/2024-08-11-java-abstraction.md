@@ -1,6 +1,6 @@
 ---
 title: "[Java] 추상화란?"
-date: 2024-08-11 09:52:45 +0900
+date: 2024-08-11 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["abstract-class", "abstraction", "interface", "java", "자바", "추상화", "추상화란?"]
 tistory_url: https://yoon-ssi.tistory.com/16

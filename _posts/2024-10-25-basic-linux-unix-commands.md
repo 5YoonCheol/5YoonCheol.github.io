@@ -1,6 +1,6 @@
 ---
 title: "알아두면 유용한 기본적인 Linux/Unix 명령"
-date: 2024-10-25 09:09:40 +0900
+date: 2024-10-25 02:00:00 +0900
 categories: [DevOps, Infra]
 tags: ["linux", "unix", "명령어"]
 tistory_url: https://yoon-ssi.tistory.com/94
