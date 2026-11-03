@@ -3,6 +3,7 @@ title: "[Java] HashMap 이란?"
 date: 2024-09-11 02:00:00 +0900
 categories: [Backend, Java]
 tags: ["hashmap", "java"]
+description: Java HashMap의 동작 원리와 특징, 자주 쓰는 메서드와 사용 예시를 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/50
 render_with_liquid: false
 ---

@@ -3,6 +3,7 @@ title: "도커(Docker)란?"
 date: 2024-09-27 02:00:00 +0900
 categories: [DevOps, Container]
 tags: ["docker", "도커"]
+description: Docker의 이미지, 컨테이너, Dockerfile, 볼륨 같은 주요 개념과 가상 머신과의 차이를 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/66
 render_with_liquid: false
 ---

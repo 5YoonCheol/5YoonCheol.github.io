@@ -3,6 +3,7 @@ title: "[SpringBoot] SecurityConfig 설정에 따른 인증오류.."
 date: 2024-07-31 02:00:00 +0900
 categories: [TroubleShooting, Backend]
 tags: ["401에러", "api", "security", "securityconfig", "springboot", "인증오류"]
+description: Spring Boot에서 API 호출 시 401 인증오류가 난 원인을 SecurityConfig 설정과 JWT 토큰 처리에서 찾아 해결한 과정을 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/4
 render_with_liquid: false
 ---

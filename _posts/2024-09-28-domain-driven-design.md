@@ -3,6 +3,7 @@ title: "DDD (Domain-Driven Design)란?"
 date: 2024-09-28 02:00:00 +0900
 categories: [Architecture, MSA]
 tags: ["ddd", "domain-driven-design"]
+description: 도메인 주도 설계(DDD)의 핵심 개념인 도메인, 도메인 모델, 유비쿼터스 언어, 바운디드 컨텍스트를 예시와 함께 정리한다.
 tistory_url: https://yoon-ssi.tistory.com/67
 render_with_liquid: false
 ---

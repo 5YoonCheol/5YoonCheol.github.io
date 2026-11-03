@@ -28,8 +28,8 @@ url: "https://5yooncheol.github.io"
 github:
   username: 5YoonCheol # change to your GitHub username
 
-twitter:
-  username: # change to your Twitter username
+# twitter:
+#   username: # 트위터(X) 계정이 생기면 주석을 풀고 채운다. 비워 두면 빈 twitter:site 메타가 나간다.
 
 social:
   # Change to your full name.
@@ -46,8 +46,9 @@ social:
 
 # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
+  google: Kq-ukrB1nk1JI-MAzSTLxSt_l586hiE22LTtlznw6Xg # Google Search Console HTML 태그 인증
+  bing: # Bing 웹마스터 도구 메타 태그의 content 값만 입력
+  naver: 1070fcbcd3d92f9f309ce6eb6dfa7a1e8551ef47 # 네이버 서치어드바이저 HTML 태그 인증 (_includes/metadata-hook.html에서 출력)
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
   baidu: # fill in your Baidu verification code
@@ -102,7 +103,7 @@ avatar: https://avatars.githubusercontent.com/u/94912388?v=4
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+social_preview_image: /assets/img/social-preview.png # 1200x630, 글에 image가 없을 때 og:image로 사용
 
 # boolean type, the global switch for TOC in posts.
 toc: true
