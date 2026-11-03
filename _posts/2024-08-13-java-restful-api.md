@@ -1,7 +1,7 @@
 ---
 title: "[Java] Restful API 구현하기"
 date: 2024-08-13 15:17:31 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["api", "http", "java", "restful", "springboot", "메서드"]
 tistory_url: https://yoon-ssi.tistory.com/19
 render_with_liquid: false

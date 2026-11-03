@@ -1,7 +1,7 @@
 ---
 title: "[ETC] CORS ERROR란?"
 date: 2024-09-25 12:12:12 +0900
-categories: ["ETC"]
+categories: [CS, Network]
 tags: ["cors", "error"]
 tistory_url: https://yoon-ssi.tistory.com/63
 render_with_liquid: false

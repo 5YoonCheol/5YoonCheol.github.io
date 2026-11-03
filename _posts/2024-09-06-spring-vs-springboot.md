@@ -1,7 +1,7 @@
 ---
 title: "[Spring & SpringBoot] Spring과 SpringBoot의 차이점"
 date: 2024-09-06 08:00:17 +0900
-categories: ["Spring & SpringBoot"]
+categories: [Backend, Spring]
 tags: ["spring", "springboot", "차이점", "특징"]
 tistory_url: https://yoon-ssi.tistory.com/45
 render_with_liquid: false

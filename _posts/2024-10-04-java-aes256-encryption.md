@@ -1,7 +1,7 @@
 ---
 title: "[Java] AES-256을 이용한 양방향 암호화 구현"
 date: 2024-10-04 07:07:07 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["aes-256", "java", "양방향-암호화"]
 tistory_url: https://yoon-ssi.tistory.com/73
 render_with_liquid: false

@@ -1,7 +1,7 @@
 ---
 title: "[OS] 프로세스와 스레드"
 date: 2024-10-28 10:00:05 +0900
-categories: ["OS"]
+categories: [CS, OS]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/97
 render_with_liquid: false

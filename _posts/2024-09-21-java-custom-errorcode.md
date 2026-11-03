@@ -1,7 +1,7 @@
 ---
 title: "[Java] ErrorCode 커스텀하기"
 date: 2024-09-21 08:08:42 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["custom", "errorcode", "java", "커스텀에러"]
 tistory_url: https://yoon-ssi.tistory.com/60
 render_with_liquid: false

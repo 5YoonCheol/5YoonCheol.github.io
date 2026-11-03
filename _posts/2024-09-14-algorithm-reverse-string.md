@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 문자열 뒤집기"
 date: 2024-09-14 14:14:30 +0900
-categories: ["Algorithm"]
+categories: [Algorithm, Problem]
 tags: ["java", "문자열-뒤집기"]
 tistory_url: https://yoon-ssi.tistory.com/53
 render_with_liquid: false

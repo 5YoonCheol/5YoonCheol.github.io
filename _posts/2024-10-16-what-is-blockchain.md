@@ -1,7 +1,7 @@
 ---
 title: "블록체인이란?"
 date: 2024-10-16 06:06:56 +0900
-categories: ["ETC"]
+categories: [ETC, Trend]
 tags: ["블록체인"]
 tistory_url: https://yoon-ssi.tistory.com/85
 render_with_liquid: false

@@ -1,7 +1,7 @@
 ---
 title: "SQL Injection 이란?"
 date: 2024-10-01 08:08:03 +0900
-categories: ["ETC"]
+categories: [Security, Web]
 tags: ["sql-injection", "sql-인젝션"]
 tistory_url: https://yoon-ssi.tistory.com/70
 render_with_liquid: false

@@ -1,7 +1,7 @@
 ---
 title: "[MySql] 서브쿼리 사용법"
 date: 2024-08-31 11:11:57 +0900
-categories: ["MySql"]
+categories: [Database, MySQL]
 tags: ["mysql", "subquery", "서브쿼리"]
 tistory_url: https://yoon-ssi.tistory.com/38
 render_with_liquid: false

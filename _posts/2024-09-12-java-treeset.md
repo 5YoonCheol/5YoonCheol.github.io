@@ -1,7 +1,7 @@
 ---
 title: "[Java] TreeSet 이란?"
 date: 2024-09-12 07:07:10 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["java", "treeset"]
 tistory_url: https://yoon-ssi.tistory.com/51
 render_with_liquid: false

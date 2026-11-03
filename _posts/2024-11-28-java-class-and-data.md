@@ -1,7 +1,7 @@
 ---
 title: "[Java] 클래스와 데이터"
 date: 2024-11-28 10:00:44 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["데이터", "클래스"]
 tistory_url: https://yoon-ssi.tistory.com/129
 render_with_liquid: false

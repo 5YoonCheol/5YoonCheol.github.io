@@ -1,7 +1,7 @@
 ---
 title: "[네트워크] TCP/IP"
 date: 2024-10-30 10:10:27 +0900
-categories: ["네트워크"]
+categories: [CS, Network]
 tags: ["tcp/ip"]
 tistory_url: https://yoon-ssi.tistory.com/99
 render_with_liquid: false

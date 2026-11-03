@@ -1,7 +1,7 @@
 ---
 title: "Blue/Green Deploy"
 date: 2024-11-04 07:07:04 +0900
-categories: ["ETC"]
+categories: [DevOps, CI-CD]
 tags: ["blue/green"]
 tistory_url: https://yoon-ssi.tistory.com/105
 render_with_liquid: false

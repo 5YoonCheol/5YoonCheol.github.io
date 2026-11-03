@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 배열 합치기"
 date: 2024-10-08 08:08:43 +0900
-categories: ["Algorithm"]
+categories: [Algorithm, Problem]
 tags: ["배열-합치기"]
 tistory_url: https://yoon-ssi.tistory.com/77
 render_with_liquid: false

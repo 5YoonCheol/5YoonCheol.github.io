@@ -1,7 +1,7 @@
 ---
 title: "[Java] 가비지 컬렉터(Garbage Collector)는 무엇일까?"
 date: 2024-09-05 08:08:24 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["garbage-collector", "gc", "java", "가비지-콜렉터"]
 tistory_url: https://yoon-ssi.tistory.com/43
 render_with_liquid: false

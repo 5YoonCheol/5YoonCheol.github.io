@@ -1,7 +1,7 @@
 ---
 title: "HTTP ERROR 정리"
 date: 2024-09-19 07:07:25 +0900
-categories: ["ETC"]
+categories: [CS, Network]
 tags: ["error", "http"]
 tistory_url: https://yoon-ssi.tistory.com/58
 render_with_liquid: false

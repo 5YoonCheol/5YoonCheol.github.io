@@ -1,7 +1,7 @@
 ---
 title: "[Vue] 인텔리제이 Vue 프로젝트 생성하기"
 date: 2024-08-17 08:45:59 +0900
-categories: ["Vue"]
+categories: [Frontend, Vue]
 tags: ["intellij", "vue", "뷰", "인텔리제이", "프로젝트-생성"]
 tistory_url: https://yoon-ssi.tistory.com/23
 render_with_liquid: false

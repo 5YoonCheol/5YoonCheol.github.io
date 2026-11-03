@@ -1,7 +1,7 @@
 ---
 title: "메세지 큐를 활용한 비동기 아키텍처"
 date: 2024-11-08 10:10:28 +0900
-categories: ["ETC"]
+categories: [Architecture, Messaging]
 tags: ["메세지-큐", "비동기-아키텍처"]
 tistory_url: https://yoon-ssi.tistory.com/109
 render_with_liquid: false

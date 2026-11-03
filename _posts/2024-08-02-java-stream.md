@@ -1,7 +1,7 @@
 ---
 title: "Java Stream(스트림)은 무엇일까?"
 date: 2024-08-02 19:47:10 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["java", "stream", "선언형-프로그래밍", "스트림"]
 tistory_url: https://yoon-ssi.tistory.com/6
 render_with_liquid: false

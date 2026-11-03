@@ -1,7 +1,7 @@
 ---
 title: "[Git] Git 명령어 마스터하기!"
 date: 2024-08-29 00:00:45 +0900
-categories: ["Git"]
+categories: [DevOps, Git]
 tags: ["git", "명령어"]
 tistory_url: https://yoon-ssi.tistory.com/36
 render_with_liquid: false

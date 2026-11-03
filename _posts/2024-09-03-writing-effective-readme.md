@@ -1,7 +1,7 @@
 ---
 title: "[Git] 효과적인 Readme.md 파일 작성방법"
 date: 2024-09-03 10:10:29 +0900
-categories: ["Git"]
+categories: [DevOps, Git]
 tags: ["git", "readme.md"]
 tistory_url: https://yoon-ssi.tistory.com/41
 render_with_liquid: false

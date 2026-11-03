@@ -1,7 +1,7 @@
 ---
 title: "[Java] Math 클래스란?"
 date: 2024-08-07 22:58:00 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["class", "java", "math", "math.ceil()", "math.floor()", "math.round()", "수학", "연산", "자바"]
 tistory_url: https://yoon-ssi.tistory.com/12
 render_with_liquid: false

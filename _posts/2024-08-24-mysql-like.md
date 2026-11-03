@@ -1,7 +1,7 @@
 ---
 title: "[MySql] LIKE 사용법"
 date: 2024-08-24 06:06:07 +0900
-categories: ["MySql"]
+categories: [Database, MySQL]
 tags: ["like", "mysql", "sql", "쿼리"]
 tistory_url: https://yoon-ssi.tistory.com/31
 render_with_liquid: false

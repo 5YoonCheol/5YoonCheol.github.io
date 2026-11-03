@@ -1,7 +1,7 @@
 ---
 title: "[SpringBoot] JWT Token 생성"
 date: 2024-08-08 22:52:27 +0900
-categories: ["Spring & SpringBoot"]
+categories: [Backend, Spring]
 tags: ["jwt", "springboot", "token", "스프링", "스프링부트", "토큰생성"]
 tistory_url: https://yoon-ssi.tistory.com/13
 render_with_liquid: false

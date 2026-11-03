@@ -1,7 +1,7 @@
 ---
 title: "알아두면 유용한 기본적인 Linux/Unix 명령"
 date: 2024-10-25 09:09:40 +0900
-categories: ["ETC"]
+categories: [DevOps, Infra]
 tags: ["linux", "unix", "명령어"]
 tistory_url: https://yoon-ssi.tistory.com/94
 render_with_liquid: false

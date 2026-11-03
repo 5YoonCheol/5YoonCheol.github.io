@@ -1,7 +1,7 @@
 ---
 title: "[포브스] 2025년 모두가 반드시 준비해야 할 10가지 AI 트렌드"
 date: 2024-11-24 10:00:37 +0900
-categories: ["ETC"]
+categories: [ETC, Trend]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/125
 render_with_liquid: false

@@ -1,7 +1,7 @@
 ---
 title: "아키텍처 설계 시 고려해야 할 점"
 date: 2024-10-24 08:08:31 +0900
-categories: ["ETC"]
+categories: [Architecture, Design]
 tags: ["고려해야-할-점", "아키텍처-설계"]
 tistory_url: https://yoon-ssi.tistory.com/93
 render_with_liquid: false

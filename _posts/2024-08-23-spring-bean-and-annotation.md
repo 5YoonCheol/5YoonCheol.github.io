@@ -1,7 +1,7 @@
 ---
 title: "[Spring] Bean과 Annotation"
 date: 2024-08-23 07:07:15 +0900
-categories: ["Spring & SpringBoot"]
+categories: [Backend, Spring]
 tags: ["annotation", "bean", "java", "spring", "빈", "스프링", "어노테이션", "자바"]
 tistory_url: https://yoon-ssi.tistory.com/29
 render_with_liquid: false

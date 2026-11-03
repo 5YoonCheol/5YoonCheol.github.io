@@ -1,7 +1,7 @@
 ---
 title: "사용자와 서버 사이의 과정"
 date: 2024-11-06 09:09:32 +0900
-categories: ["ETC"]
+categories: [CS, Network]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/107
 render_with_liquid: false

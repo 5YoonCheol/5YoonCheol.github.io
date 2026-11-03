@@ -1,7 +1,7 @@
 ---
 title: "[MySql] MySql 효율적인 쿼리 작성을 위한 팁"
 date: 2024-11-29 10:00:21 +0900
-categories: ["MySql"]
+categories: [Database, MySQL]
 tags: ["mysql"]
 tistory_url: https://yoon-ssi.tistory.com/130
 render_with_liquid: false

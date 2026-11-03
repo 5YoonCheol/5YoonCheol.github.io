@@ -1,7 +1,7 @@
 ---
 title: "[알고리즘] 문자열에서 특정 문자와 다른 문자 사이의 가장 짧은 거리 구하기"
 date: 2024-09-16 05:05:48 +0900
-categories: ["Algorithm"]
+categories: [Algorithm, Problem]
 tags: ["java", "문자-거리-구하기"]
 tistory_url: https://yoon-ssi.tistory.com/55
 render_with_liquid: false

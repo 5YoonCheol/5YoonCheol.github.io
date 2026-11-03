@@ -1,7 +1,7 @@
 ---
 title: "시간 복잡도란?"
 date: 2024-10-09 09:09:51 +0900
-categories: ["ETC"]
+categories: [Algorithm, Theory]
 tags: ["시간복잡도"]
 tistory_url: https://yoon-ssi.tistory.com/78
 render_with_liquid: false

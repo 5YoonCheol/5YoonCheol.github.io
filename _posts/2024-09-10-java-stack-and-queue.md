@@ -1,7 +1,7 @@
 ---
 title: "[Java] Stack(스택)과 Queue(큐)"
 date: 2024-09-10 10:10:34 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["java", "queue", "stack", "스택", "자바", "큐"]
 tistory_url: https://yoon-ssi.tistory.com/49
 render_with_liquid: false

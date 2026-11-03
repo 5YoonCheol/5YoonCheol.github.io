@@ -1,7 +1,7 @@
 ---
 title: "DDD (Domain-Driven Design)란?"
 date: 2024-09-28 09:09:43 +0900
-categories: ["ETC"]
+categories: [Architecture, MSA]
 tags: ["ddd", "domain-driven-design"]
 tistory_url: https://yoon-ssi.tistory.com/67
 render_with_liquid: false

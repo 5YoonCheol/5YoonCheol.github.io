@@ -1,7 +1,7 @@
 ---
 title: "HA(High Availability)와 클러스터링"
 date: 2024-10-21 10:10:00 +0900
-categories: ["ETC"]
+categories: [DevOps, Infra]
 tags: ["ha", "클러스터링"]
 tistory_url: https://yoon-ssi.tistory.com/90
 render_with_liquid: false

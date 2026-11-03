@@ -1,7 +1,7 @@
 ---
 title: "[MySql] MySql 인덱스의 원리와 올바른 설계 전략"
 date: 2024-11-30 10:00:41 +0900
-categories: ["MySql"]
+categories: [Database, MySQL]
 tags: ["mysql", "인덱스"]
 tistory_url: https://yoon-ssi.tistory.com/131
 render_with_liquid: false

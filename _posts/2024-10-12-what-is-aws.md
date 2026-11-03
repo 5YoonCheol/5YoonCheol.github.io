@@ -1,7 +1,7 @@
 ---
 title: "AWS란?"
 date: 2024-10-12 12:12:32 +0900
-categories: ["ETC"]
+categories: [DevOps, Cloud]
 tags: ["aws"]
 tistory_url: https://yoon-ssi.tistory.com/81
 render_with_liquid: false

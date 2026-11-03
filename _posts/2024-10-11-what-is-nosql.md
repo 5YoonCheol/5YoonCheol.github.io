@@ -1,7 +1,7 @@
 ---
 title: "NoSql이란?"
 date: 2024-10-11 11:11:49 +0900
-categories: ["ETC"]
+categories: [Database, NoSQL]
 tags: ["nosql"]
 tistory_url: https://yoon-ssi.tistory.com/80
 render_with_liquid: false

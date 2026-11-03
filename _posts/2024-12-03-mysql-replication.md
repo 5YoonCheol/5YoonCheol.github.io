@@ -1,7 +1,7 @@
 ---
 title: "[MySql] MySql 복제 설정으로 고가용성 확보하기"
 date: 2024-12-03 10:00:43 +0900
-categories: ["MySql"]
+categories: [Database, MySQL]
 tags: ["mysql-복제"]
 tistory_url: https://yoon-ssi.tistory.com/134
 render_with_liquid: false

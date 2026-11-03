@@ -1,7 +1,7 @@
 ---
 title: "[Java] Pattern Matching for switch"
 date: 2024-08-20 10:10:59 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["pattern-matching", "switch", "자바", "패턴매칭"]
 tistory_url: https://yoon-ssi.tistory.com/26
 render_with_liquid: false

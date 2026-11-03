@@ -1,7 +1,7 @@
 ---
 title: "Cloud와 On-premise"
 date: 2024-10-19 09:09:40 +0900
-categories: ["ETC"]
+categories: [DevOps, Cloud]
 tags: ["cloud", "on-premise", "인프라-환경"]
 tistory_url: https://yoon-ssi.tistory.com/88
 render_with_liquid: false

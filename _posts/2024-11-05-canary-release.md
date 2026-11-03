@@ -1,7 +1,7 @@
 ---
 title: "Canary Release (카나리 배포)"
 date: 2024-11-05 08:08:38 +0900
-categories: ["ETC"]
+categories: [DevOps, CI-CD]
 tags: ["canary", "deploy", "release"]
 tistory_url: https://yoon-ssi.tistory.com/106
 render_with_liquid: false

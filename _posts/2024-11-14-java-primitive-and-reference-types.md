@@ -1,7 +1,7 @@
 ---
 title: "[Java] 기본형과 참조형"
 date: 2024-11-14 10:00:32 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["java", "기본형", "참조형"]
 tistory_url: https://yoon-ssi.tistory.com/115
 render_with_liquid: false

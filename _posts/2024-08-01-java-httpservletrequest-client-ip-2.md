@@ -1,7 +1,7 @@
 ---
 title: "[Java] HttpServletRequest를 통하여 Client IP 주소 가져오기"
 date: 2024-08-01 22:05:37 +0900
-categories: ["Java"]
+categories: [Backend, Java]
 tags: ["httpservletrequest", "ip주소", "java"]
 tistory_url: https://yoon-ssi.tistory.com/10
 render_with_liquid: false

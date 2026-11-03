@@ -1,7 +1,7 @@
 ---
 title: "비동기 메세지 Exchange 타입 (RabbitMQ)"
 date: 2024-11-09 10:00:39 +0900
-categories: ["ETC"]
+categories: [Architecture, Messaging]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/110
 render_with_liquid: false

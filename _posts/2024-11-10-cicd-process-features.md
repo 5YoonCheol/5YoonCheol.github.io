@@ -1,7 +1,7 @@
 ---
 title: "CI/CD 프로세스 별 필요 기능"
 date: 2024-11-10 10:10:50 +0900
-categories: ["ETC"]
+categories: [DevOps, CI-CD]
 tags: []
 tistory_url: https://yoon-ssi.tistory.com/111
 render_with_liquid: false

@@ -1,7 +1,7 @@
 ---
 title: "MSA (Micro Services Architecture)란?"
 date: 2024-09-29 09:09:22 +0900
-categories: ["ETC"]
+categories: [Architecture, MSA]
 tags: ["micro-services-architecture", "msa"]
 tistory_url: https://yoon-ssi.tistory.com/68
 render_with_liquid: false
