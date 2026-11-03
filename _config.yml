@@ -46,7 +46,7 @@ social:
 
 # Site Verification Settings
 webmaster_verifications:
-  google: # Google Search Console 'HTML 태그' 인증의 content 값만 입력
+  google: Kq-ukrB1nk1JI-MAzSTLxSt_l586hiE22LTtlznw6Xg # Google Search Console HTML 태그 인증
   bing: # Bing 웹마스터 도구 메타 태그의 content 값만 입력
   naver: # 네이버 서치어드바이저 'HTML 태그' 인증의 content 값만 입력 (_includes/metadata-hook.html에서 출력)
   alexa: # fill in your Alexa verification code
