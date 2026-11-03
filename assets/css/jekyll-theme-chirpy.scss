@@ -343,3 +343,10 @@
     }
   }
 }
+
+/* 한글 문구가 어절 중간에서 줄바꿈되지 않게 */
+#sidebar .site-title,
+#sidebar .site-subtitle,
+.home-hero-desc {
+  word-break: keep-all;
+}
