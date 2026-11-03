@@ -7,15 +7,15 @@ tistory_url: https://yoon-ssi.tistory.com/20
 render_with_liquid: false
 ---
 
-이번 포스팅에서는 Spring Batch를 사용하여 매일 새벽 2시에 데이터를 처리하는 배치 프로그램을 구현하는 방법에 대해서 설명해보려고 한다.
+이번에는 Spring Batch로 매일 새벽 2시에 데이터를 처리하는 배치 프로그램을 만들어보려고 한다.
 
-MyBatis를 사용했고 DataBase는 MySql을 사용했다.
+MyBatis를 썼고, DB는 MySQL을 썼다.
 
 ---
 
 ### 1. 프로젝트 설정
 
-MyBatis와 MySQL을 사용하기 위해 spring-boot-starter-batch, mybatis-spring-boot-starter, mysql-connector-java 의존성을 pom.xml에 추가한다.
+pom.xml에 spring-boot-starter-batch, mybatis-spring-boot-starter, mysql-connector-java 의존성을 추가한다.
 
 ```html
 <dependencies>
@@ -39,11 +39,9 @@ MyBatis와 MySQL을 사용하기 위해 spring-boot-starter-batch, mybatis-sprin
 
 ### 2. MyBatis 설정
 
-MyBatis에서 사용할 매퍼 파일과 매퍼 인터페이스를 작성한다.
+매퍼 파일과 매퍼 인터페이스를 만든다. 여기서는 OrderMapper.xml과 OrderMapper 인터페이스를 쓴다.
 
-예를 들어, OrderMapper.xml과 OrderMapper 인터페이스를 설정한다.
-
-OrderMapper .xml
+OrderMapper.xml
 
 ```html
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -82,7 +80,7 @@ public interface OrderMapper {
 
 ### 3. 모델 클래스 작성
 
-MyBatis 매퍼에서 사용하는 모델 클래스를 작성한다.
+매퍼에서 쓸 모델 클래스를 만든다.
 
 ```java
 package com.example.batch.model;
@@ -99,10 +97,10 @@ public class Order {
 
 ### 4. Batch Job 설정
 
-Spring Batch에서 MyBatis를 사용하는 Job과 Step을 설정한다.
+MyBatis를 쓰는 Job과 Step을 설정한다.
 
-- **Job**: 하나의 배치 작업을 나타내며, 여러 개의 Step으로 구성될 수 있다. Job은 실행되는 전체 배치 작업의 흐름을 정의한다.
-- **Step**: Job 내의 하나의 단계로, 데이터를 읽고, 처리하고, 쓰는 과정을 정의한다. 하나의 Step은 Reader, Processor, Writer로 구성된다.
+- Job: 배치 작업 하나를 뜻한다. Step 여러 개로 이뤄질 수 있고, 배치 작업 전체 흐름을 정의한다.
+- Step: Job 안의 한 단계다. 데이터를 읽고, 처리하고, 쓰는 과정을 정의하고, Reader, Processor, Writer로 구성된다.
 
 ```java
 @Configuration
@@ -161,7 +159,7 @@ public class BatchConfig {
 
 ### 5. 스케줄링 설정
 
-스케줄링을 설정하여 매일 새벽 2시에 배치 작업이 실행되도록 설정한다.
+매일 새벽 2시에 배치가 돌도록 스케줄을 건다.
 
 ```java
 import org.springframework.batch.core.Job;
@@ -198,7 +196,7 @@ public class BatchScheduler {
 
 ### 6. 데이터베이스 설정
 
-application.properties 파일에 MySQL 데이터베이스와 MyBatis 설정을 추가한다.
+application.properties에 MySQL과 MyBatis 설정을 넣는다.
 
 ```html
 spring.datasource.url=jdbc:mysql://localhost:3306/batchdb
@@ -216,7 +214,7 @@ spring.batch.initialize-schema=always
 
 ### 7. 메인 애플리케이션 실행
 
-@SpringBootApplication이 있는 메인 클래스를 실행한다.
+`@SpringBootApplication`이 붙은 메인 클래스를 실행하면 된다.
 
 ```java
 import org.springframework.boot.SpringApplication;
