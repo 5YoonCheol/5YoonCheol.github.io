@@ -98,13 +98,15 @@ update로 두면 엔티티가 바뀔 때마다 스키마를 자동으로 맞춰�
 <persistence-unit name="myUnit">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <properties>
-        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb"/>
-        <property name="javax.persistence.jdbc.user" value="user"/>
-        <property name="javax.persistence.jdbc.password" value="password"/>
+        <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb"/>
+        <property name="jakarta.persistence.jdbc.user" value="user"/>
+        <property name="jakarta.persistence.jdbc.password" value="password"/>
         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
     </properties>
 </persistence-unit>
 ```
+
+JPA 3.0(Hibernate 6, Spring Boot 3)부터 `javax.persistence`가 `jakarta.persistence`로 바뀌었다. `@Entity` 같은 어노테이션의 import도 `jakarta.persistence.*`로 바꿔야 하고, Hibernate 5나 Boot 2.x를 쓴다면 예전처럼 `javax.persistence`를 쓴다.
 
 3. EntityManager 사용: EntityManager로 데이터를 넣고, 조회하고, 수정하고, 지운다. 트랜잭션도 EntityManager가 관리한다.
 

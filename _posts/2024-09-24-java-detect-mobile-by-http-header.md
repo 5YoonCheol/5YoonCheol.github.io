@@ -25,8 +25,10 @@ render_with_liquid: false
 
 ### 3. **Java 예시 (서블릿)**
 
-```javascript
-import javax.servlet.http.HttpServletRequest;
+Spring Boot 3(Servlet 6)부터 패키지가 `javax.servlet`에서 `jakarta.servlet`으로 바뀌었다. Boot 2.x를 쓴다면 `javax.servlet.http.HttpServletRequest`로 읽으면 된다.
+
+```java
+import jakarta.servlet.http.HttpServletRequest;
 
 public class UserAgentUtils {
 
@@ -64,7 +66,7 @@ public class UserAgentUtils {
 ****참고: PC 환경에서 개발자모드를 통해 모바일 환경으로 변경하는 경우에는 아래 코드를 통해 체크할 수 있다.**
 
 ```java
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class UserAgentUtils {
 
