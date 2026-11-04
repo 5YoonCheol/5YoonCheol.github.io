@@ -34,10 +34,14 @@
       // end는 그날 0시로 해석돼서 오늘까지 넣으려면 내일 날짜를 줘야 한다.
       // end를 아예 빼면 TOTAL이 0으로 나오는 경우가 있어 항상 start와 end를 함께 보낸다.
       const tomorrow = fmt(new Date(Date.parse(today + 'T12:00:00Z') + 86400000));
+      // 집계 시작일. 이보다 이른 기록(개설 첫날 자동 방문 등)은 세지 않는다.
+      const since = '{{ site.analytics.goatcounter.since | default: "2024-01-01" }}';
+      const later = (a, b) => (a > b ? a : b);
+      const monthStart = later(`${today.slice(0, 8)}01`, since);
       const ranges = {
-        today: `?start=${today}&end=${tomorrow}`,
-        month: `?start=${today.slice(0, 8)}01&end=${tomorrow}`,
-        total: `?start=2024-01-01&end=${tomorrow}`
+        today: `?start=${later(today, since)}&end=${tomorrow}`,
+        month: `?start=${monthStart}&end=${tomorrow}`,
+        total: `?start=${since}&end=${tomorrow}`
       };
 
       Object.entries(ranges).forEach(([key, query]) => {
