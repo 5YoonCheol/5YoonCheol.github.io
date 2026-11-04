@@ -2,8 +2,11 @@
 title: "[Spring] @Transactional이 동작하지 않는 경우 정리"
 date: 2026-11-03 02:00:00 +0900
 categories: [Backend, Spring]
-tags: [spring, transactional, aop, 트랜잭션]
+tags: [spring, transactional, aop, 트랜잭션, spring-실무-함정]
+description: "@Transactional을 붙였는데 트랜잭션이 안 걸리거나 롤백이 안 되는 경우를 프록시 동작 기준으로 정리한다. 같은 클래스 내부 호출, private 메서드, Checked Exception, 예외 삼키기, rollback-only, 빈이 아닌 객체."
 ---
+
+{% include series-nav.html series="spring-pitfalls" current=1 %}
 
 `@Transactional`은 메서드에 붙이기만 하면 트랜잭션이 걸리는 것처럼 보인다. 그런데 분명 붙였는데 롤백이 안 되거나, 아예 트랜잭션이 시작되지 않는 경우가 있다. 대부분은 스프링이 트랜잭션을 거는 방식을 알면 이유가 보인다. 자주 헷갈리는 경우를 하나씩 정리해보자.
 
@@ -191,3 +194,7 @@ public void issueWelcomeCoupon(String email) {
 | `new`로 만든 객체 | 스프링 빈이 아님 | 빈으로 주입받아 사용 |
 
 `@Transactional`이 이상하게 동작한다 싶으면 "이 호출이 프록시를 거쳤나?"와 "예외가 메서드 밖으로 나갔나?" 두 가지부터 확인해보면 된다.
+
+---
+
+다음 편에서는 이 글 6번에서 잠깐 나온 전파 속성을 제대로 다룬다. `REQUIRES_NEW` 안에서 예외를 잡으면 어떻게 되는지, `readOnly = true`가 실제로 무엇을 막고 무엇을 못 막는지, 그리고 전파 속성이 커넥션 풀을 어떻게 잡아먹는지까지: [트랜잭션 전파와 readOnly, 그리고 롤백이 안 되는 이유](/posts/spring-transaction-propagation-and-readonly/)
