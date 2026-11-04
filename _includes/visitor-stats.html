@@ -26,13 +26,13 @@
       if (!box) return;
 
       const base = 'https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/TOTAL.json';
-      // GoatCounter는 방문을 사이트 설정의 시간대(기본 UTC) 날짜로 저장한다.
-      // 날짜 경계를 그쪽과 맞춰야 오늘/이번 달 숫자가 맞는다.
+      /* GoatCounter는 방문을 사이트 설정의 시간대(기본 UTC) 날짜로 저장한다. */
+      /* 날짜 경계를 그쪽과 맞춰야 오늘/이번 달 숫자가 맞는다. */
       const tz = '{{ site.analytics.goatcounter.timezone | default: "UTC" }}';
-      const fmt = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: tz }).format(d); // YYYY-MM-DD
+      const fmt = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: tz }).format(d); /* YYYY-MM-DD */
       const today = fmt(new Date());
-      // end는 그날 0시로 해석돼서 오늘까지 넣으려면 내일 날짜를 줘야 한다.
-      // end를 아예 빼면 TOTAL이 0으로 나오는 경우가 있어 항상 start와 end를 함께 보낸다.
+      /* end는 그날 0시로 해석돼서 오늘까지 넣으려면 내일 날짜를 줘야 한다. */
+      /* end를 아예 빼면 TOTAL이 0으로 나오는 경우가 있어 항상 start와 end를 함께 보낸다. */
       const tomorrow = fmt(new Date(Date.parse(today + 'T12:00:00Z') + 86400000));
       const ranges = {
         today: `?start=${today}&end=${tomorrow}`,
@@ -49,7 +49,7 @@
             el.textContent = new Intl.NumberFormat('ko-KR').format(count);
           })
           .catch(() => {
-            // 해당 기간 방문 기록이 없으면 404가 온다.
+            /* 해당 기간 방문 기록이 없으면 404가 온다. */
             el.textContent = '0';
           });
       });
