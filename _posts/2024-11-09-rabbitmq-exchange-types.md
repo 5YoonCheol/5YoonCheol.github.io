@@ -55,3 +55,11 @@ RabbitMQ의 Exchange 타입을 예로 알아보자.
 | Fanout Exchange | 연결된 모든 큐에 브로드캐스트 | 이벤트 알림, 공지사항 전송 |
 | Topic Exchange | 패턴에 따라 메시지를 라우팅 | 주제별 메시지 구독 시스템 |
 | Headers Exchange | 헤더 조건에 맞는 큐에 메시지 전달 | 특정 조건을 만족하는 데이터 처리 |
+
+
+---
+
+함께 보면 좋은 글
+
+- [메세지 큐를 활용한 비동기 아키텍처](/posts/message-queue-async-architecture/) — 메시지 큐를 왜 쓰는지, 어떤 흐름에 넣는지
+- [Kafka란?](/posts/what-is-kafka/) — Exchange 개념이 없는 Kafka는 토픽과 파티션으로 어떻게 라우팅하는지
