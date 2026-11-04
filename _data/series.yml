@@ -1,0 +1,32 @@
+# 시리즈 목차. 글 본문에서 {% include series-nav.html series="spring-pitfalls" current=1 %} 로 쓴다. current 는 num 값이다.
+# status: published | draft (draft 는 링크 없이 제목만 보여 준다)
+spring-pitfalls:
+  title: Spring 실무 함정
+  tagline: 문서대로 썼는데 왜 안 되지? 재현 가능한 예제로 원인을 Spring 내부까지 내려가서 본다.
+  posts:
+    - num: 1
+      title: "@Transactional이 동작하지 않는 경우 정리"
+      url: /posts/spring-transactional-pitfalls/
+      status: published
+    - num: 2
+      title: "트랜잭션 전파와 readOnly, 그리고 롤백이 안 되는 이유"
+      url: /posts/spring-transaction-propagation-and-readonly/
+      status: draft   # 2026-11-12 게시 뒤 published 로 바꾼다
+    - num: 3
+      title: "빈 하나인데 왜 두 번 만들어지지? 빈 생명주기와 순환 참조"
+      status: draft
+    - num: 4
+      title: "AOP 프록시가 적용되지 않는 패턴 모음"
+      status: draft
+    - num: 5
+      title: "OSIV와 LazyInitializationException: 끄면 터지고 켜면 느리다"
+      status: draft
+    - num: 6
+      title: "N+1은 fetch join으로 끝나지 않는다"
+      status: draft
+    - num: 7
+      title: "@RequestBody·@Valid·@ControllerAdvice가 기대와 다르게 동작할 때"
+      status: draft
+    - num: 8
+      title: "운영에서만 터지는 것들: 커넥션 풀, 타임아웃, 스레드 풀"
+      status: draft

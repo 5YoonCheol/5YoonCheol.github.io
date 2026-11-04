@@ -1,0 +1,20 @@
+{% assign s = site.data.series[include.series] %}
+{% if s %}
+<div class="series-nav">
+  <p class="series-nav-title"><i class="fas fa-layer-group"></i> 시리즈: {{ s.title }}</p>
+  {% if s.tagline %}
+  <p class="series-nav-tagline">{{ s.tagline }}</p>
+  {% endif %}
+  <ol>
+  {% for p in s.posts %}
+    {% if p.num == include.current %}
+    <li class="current"><strong>{{ p.title }}</strong> <span class="badge-now">지금 보는 글</span></li>
+    {% elsif p.status == "published" and p.url %}
+    <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {% else %}
+    <li class="upcoming">{{ p.title }} <span class="badge-soon">예정</span></li>
+    {% endif %}
+  {% endfor %}
+  </ol>
+</div>
+{% endif %}

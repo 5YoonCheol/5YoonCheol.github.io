@@ -428,3 +428,66 @@
     font-variant-numeric: tabular-nums;
   }
 }
+
+/* ---------- 시리즈 목차 박스 (_includes/series-nav.html) ---------- */
+
+.series-nav {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--link-color) 35%, transparent);
+  border-left: 4px solid var(--link-color);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--link-color) 6%, var(--card-bg));
+
+  .series-nav-title {
+    margin: 0 0 0.25rem;
+    font-weight: 700;
+    color: var(--heading-color);
+
+    i {
+      margin-right: 0.35rem;
+      color: var(--link-color);
+    }
+  }
+
+  .series-nav-tagline {
+    margin: 0 0 0.6rem;
+    font-size: 0.88rem;
+    color: var(--text-muted-color);
+  }
+
+  ol {
+    margin: 0;
+    padding-left: 1.4rem;
+    font-size: 0.92rem;
+
+    li {
+      margin: 0.15rem 0;
+    }
+
+    li.upcoming {
+      color: var(--text-muted-color);
+    }
+  }
+
+  .badge-now,
+  .badge-soon {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0 0.4rem;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    border-radius: 0.3rem;
+    vertical-align: middle;
+  }
+
+  .badge-now {
+    color: #fff;
+    background: var(--link-color);
+  }
+
+  .badge-soon {
+    color: var(--text-muted-color);
+    border: 1px solid color-mix(in srgb, var(--text-muted-color) 50%, transparent);
+  }
+}
