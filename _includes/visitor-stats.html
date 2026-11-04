@@ -1,7 +1,10 @@
 {%- comment -%}
-  홈 상단 방문자 수 (GoatCounter). _config.yml 의 analytics.goatcounter.id 가 있을 때만 보인다.
+  홈 상단 방문자 수. _config.yml 의 visitor_counter 설정을 쓴다.
+  Abacus 카운터에 day-YYYY-MM-DD / month-YYYY-MM / total 키를 두고,
+  한 브라우저는 하루 한 번만 세 개를 같이 올린다. 배포 사이트에서만 올리고 로컬에서는 읽기만 한다.
 {%- endcomment -%}
-{% if site.analytics.goatcounter.id %}
+{% assign vc = site.visitor_counter %}
+{% if vc.namespace %}
   <div class="visitor-stats" id="visitor-stats">
     <div class="visitor-stats-title"><i class="far fa-eye"></i> 방문자</div>
     <div class="visitor-stats-row">
@@ -25,32 +28,40 @@
       const box = document.getElementById('visitor-stats');
       if (!box) return;
 
-      const base = 'https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/TOTAL.json';
-      /* GoatCounter는 방문을 사이트 설정의 시간대(기본 UTC) 날짜로 저장한다. */
-      /* 날짜 경계를 그쪽과 맞춰야 오늘/이번 달 숫자가 맞는다. */
-      const tz = '{{ site.analytics.goatcounter.timezone | default: "UTC" }}';
-      const fmt = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: tz }).format(d); /* YYYY-MM-DD */
-      const today = fmt(new Date());
-      /* end는 그날 0시로 해석돼서 오늘까지 넣으려면 내일 날짜를 줘야 한다. */
-      /* end를 아예 빼면 TOTAL이 0으로 나오는 경우가 있어 항상 start와 end를 함께 보낸다. */
-      const tomorrow = fmt(new Date(Date.parse(today + 'T12:00:00Z') + 86400000));
-      const ranges = {
-        today: `?start=${today}&end=${tomorrow}`,
-        month: `?start=${today.slice(0, 8)}01&end=${tomorrow}`,
-        total: `?start=2024-01-01&end=${tomorrow}`
+      const api = 'https://abacus.jasoncameron.dev';
+      const ns = '{{ vc.namespace }}';
+      const count = {{ jekyll.environment | jsonify }} === 'production';
+      const baseTotal = {{ vc.base_total | default: 0 }};
+      const baseMonths = {{ vc.base_months | jsonify }} || {};
+
+      const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul' }).format(new Date()); /* YYYY-MM-DD */
+      const month = today.slice(0, 7);
+      const keys = {
+        today: { key: `day-${today}`, base: 0 },
+        month: { key: `month-${month}`, base: baseMonths[month] || 0 },
+        total: { key: 'total', base: baseTotal }
       };
 
-      Object.entries(ranges).forEach(([key, query]) => {
-        const el = box.querySelector(`[data-range="${key}"]`);
-        fetch(base + query)
-          .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      /* 오늘 이미 센 브라우저면 읽기만 한다. 저장소를 못 쓰는 환경에서는 세지 않는다. */
+      const seenKey = 'visitor-counted';
+      let hit = false;
+      try {
+        hit = count && localStorage.getItem(seenKey) !== today;
+        if (hit) localStorage.setItem(seenKey, today);
+      } catch (e) {
+        hit = false;
+      }
+
+      const nf = new Intl.NumberFormat('ko-KR');
+      Object.entries(keys).forEach(([range, { key, base }]) => {
+        const el = box.querySelector(`[data-range="${range}"]`);
+        fetch(`${api}/${hit ? 'hit' : 'get'}/${ns}/${key}?_=${Date.now()}`, { cache: 'no-store' })
+          .then((res) => (res.ok ? res.json() : res.status === 404 ? { value: 0 } : Promise.reject(res.status)))
           .then((data) => {
-            const count = Number(String(data.count).replace(/\D/g, ''));
-            el.textContent = new Intl.NumberFormat('ko-KR').format(count);
+            el.textContent = nf.format(Number(data.value || 0) + base);
           })
           .catch(() => {
-            /* 해당 기간 방문 기록이 없으면 404가 온다. */
-            el.textContent = '0';
+            el.textContent = '-';
           });
       });
     });
