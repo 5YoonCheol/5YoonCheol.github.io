@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: 윤철
-  email: # change to your email address
+  email: oyc1530@naver.com # 멘토링·코드리뷰 문의용. 소개·연락처 페이지와 사이드바 아이콘에 표시된다
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
@@ -56,6 +56,11 @@ webmaster_verifications:
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
+
+# Google AdSense. 승인 신청 전 애드센스 계정 화면의 게시자 ID(ca-pub-로 시작)를 넣는다.
+# 값이 있으면 production 빌드에서 _includes/metadata-hook.html 이 광고 스크립트를 <head>에 넣고 /ads.txt 가 채워진다.
+adsense:
+  client: # 예: ca-pub-1234567890123456
 
 # Web Analytics Settings
 analytics:
@@ -130,7 +135,7 @@ actions:
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+  provider: # [disqus | utterances | giscus]  giscus 설정값을 채운 뒤 giscus 로 바꾼다
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -139,16 +144,19 @@ comments:
     repo: # <gh-username>/<repo>
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
+  # 1) 저장소 Settings → General → Features 에서 Discussions 켜기
+  # 2) https://github.com/apps/giscus 설치 (이 저장소만 선택)
+  # 3) https://giscus.app 에서 저장소 입력 → repo_id, category_id 복사
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    repo: 5YoonCheol/5yooncheol.github.io
+    repo_id: # giscus.app 이 알려주는 data-repo-id
+    category: Comments # Discussions 에 만들 카테고리 이름 (Announcements 형식 권장)
+    category_id: # giscus.app 이 알려주는 data-category-id
+    mapping: pathname
+    strict: 1 # 경로가 정확히 같은 글에만 연결 (제목 유사도로 잘못 묶이는 것 방지)
+    input_position: top
+    lang: ko
+    reactions_enabled: 1
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
