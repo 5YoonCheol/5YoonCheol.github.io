@@ -176,6 +176,10 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
+# 옛 URL 리다이렉트 (글 front matter의 redirect_from 목록을 읽는다)
+plugins:
+  - jekyll-redirect-from
+
 paginate: 10
 
 # The base URL of your site
