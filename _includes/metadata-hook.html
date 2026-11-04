@@ -1,5 +1,13 @@
-<!-- 사이트 전용 추가 메타데이터 (검색엔진 등록·피드 안내) -->
+<!-- 사이트 전용 추가 메타데이터 (검색엔진 등록·피드 안내·애드센스) -->
 {%- if site.webmaster_verifications.naver -%}
   <meta name="naver-site-verification" content="{{ site.webmaster_verifications.naver }}">
 {%- endif -%}
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+{%- comment -%}
+  Google AdSense: _config.yml 의 adsense.client 에 게시자 ID(ca-pub-…)를 넣으면 production 빌드에서만 출력된다.
+  meta 태그는 사이트 소유권 확인용, script 는 광고 코드(자동 광고)용이다.
+{%- endcomment -%}
+{%- if site.adsense.client and jekyll.environment == 'production' -%}
+  <meta name="google-adsense-account" content="{{ site.adsense.client }}">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.client }}" crossorigin="anonymous"></script>
+{%- endif -%}
