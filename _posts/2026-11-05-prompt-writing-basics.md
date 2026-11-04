@@ -1,6 +1,6 @@
 ---
 title: "[AI] 개발자를 위한 프롬프트 작성 방식 정리"
-date: 2026-11-05 06:00:00 +0900
+date: 2026-11-05 02:00:00 +0900
 categories: [AI, Prompt]
 tags: [ai, prompt, llm, prompt-engineering]
 ---
