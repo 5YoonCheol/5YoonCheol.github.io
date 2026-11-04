@@ -26,12 +26,18 @@
       if (!box) return;
 
       const base = 'https://{{ site.analytics.goatcounter.id }}.goatcounter.com/counter/TOTAL.json';
-      // 블로그 기준 시간대(한국)로 오늘 날짜를 만든다. en-CA 형식은 YYYY-MM-DD.
-      const today = new Intl.DateTimeFormat('en-CA', { timeZone: '{{ site.timezone | default: "Asia/Seoul" }}' }).format(new Date());
+      // GoatCounter는 방문을 사이트 설정의 시간대(기본 UTC) 날짜로 저장한다.
+      // 날짜 경계를 그쪽과 맞춰야 오늘/이번 달 숫자가 맞는다.
+      const tz = '{{ site.analytics.goatcounter.timezone | default: "UTC" }}';
+      const fmt = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: tz }).format(d); // YYYY-MM-DD
+      const today = fmt(new Date());
+      // end는 그날 0시로 해석돼서 오늘까지 넣으려면 내일 날짜를 줘야 한다.
+      // end를 아예 빼면 TOTAL이 0으로 나오는 경우가 있어 항상 start와 end를 함께 보낸다.
+      const tomorrow = fmt(new Date(Date.parse(today + 'T12:00:00Z') + 86400000));
       const ranges = {
-        today: `?start=${today}`,
-        month: `?start=${today.slice(0, 8)}01`,
-        total: ''
+        today: `?start=${today}&end=${tomorrow}`,
+        month: `?start=${today.slice(0, 8)}01&end=${tomorrow}`,
+        total: `?start=2024-01-01&end=${tomorrow}`
       };
 
       Object.entries(ranges).forEach(([key, query]) => {
