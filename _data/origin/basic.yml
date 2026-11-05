@@ -1,0 +1,43 @@
+# jekyll-theme-chirpy 7.6.0 의 _data/origin/basic.yml 을 덮어쓴 파일. dayjs locale 경로만 다르다.
+# fonts
+
+webfonts: /assets/lib/fonts/main.css
+
+# Libraries
+
+toc:
+  css: /assets/lib/tocbot/tocbot.min.css
+  js: /assets/lib/tocbot/tocbot.min.js
+
+fontawesome:
+  css: /assets/lib/fontawesome-free/css/all.min.css
+
+search:
+  js: /assets/lib/simple-jekyll-search/simple-jekyll-search.min.js
+
+mermaid:
+  js: /assets/lib/mermaid/mermaid.min.js
+
+dayjs:
+  js:
+    common: /assets/lib/dayjs/dayjs.min.js
+    # 테마 기본값은 en.js 고정이라 한국어 상대 날짜("3일 전")가 영어로 나온다.
+    # assets/lib 서브모듈(chirpy-static-assets)은 en.js만 담고 있어서 ko.js는
+    # 사이트 쪽 assets/js/data/dayjs-locale/ 에 두고 :LOCALE(site.lang 앞부분)로 고른다.
+    locale: /assets/js/data/dayjs-locale/:LOCALE.js
+    relativeTime: /assets/lib/dayjs/plugin/relativeTime.js
+    localizedFormat: /assets/lib/dayjs/plugin/localizedFormat.js
+
+glightbox:
+  css: /assets/lib/glightbox/glightbox.min.css
+  js: /assets/lib/glightbox/glightbox.min.js
+
+lazy-polyfill:
+  css: /assets/lib/loading-attribute-polyfill/loading-attribute-polyfill.min.css
+  js: /assets/lib/loading-attribute-polyfill/loading-attribute-polyfill.umd.min.js
+
+clipboard:
+  js: /assets/lib/clipboard/clipboard.min.js
+
+mathjax:
+  js: /assets/lib/mathjax/tex-chtml.js
