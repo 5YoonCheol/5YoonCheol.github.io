@@ -31,9 +31,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          # submodules: true
-          # If using the 'assets' git submodule from Chirpy Starter, uncomment above
-          # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
+          submodules: true # assets/lib (chirpy-static-assets) 서브모듈로 라이브러리를 자체 호스팅한다
 
       - name: Setup Pages
         id: pages

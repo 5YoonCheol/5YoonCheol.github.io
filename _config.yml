@@ -158,10 +158,13 @@ comments:
     lang: ko
     reactions_enabled: 1
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+# Self-hosted static assets › https://github.com/cotes2020/chirpy-static-assets
+# 외부 CDN(jsDelivr, Google Fonts) 대신 assets/lib 서브모듈의 라이브러리·폰트를 사이트에서 직접 서빙한다.
+# 공급망 공격(CDN 패키지에 악성 버전이 올라오는 경우)을 막기 위해 켜 둔다.
+# 로컬에서 처음 받을 때는 `git submodule update --init` 을 실행해야 assets/lib 이 채워진다.
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
+    enabled: true # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]
