@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: 윤철
-  email: oyc1530@naver.com # 멘토링·코드리뷰 문의용. 소개·연락처 페이지와 사이드바 아이콘에 표시된다
+  email: oyc1530@naver.com # 문의용. 소개·연락처 페이지와 사이드바 아이콘에 표시된다
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
