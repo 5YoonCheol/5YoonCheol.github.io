@@ -11,7 +11,7 @@ spring-pitfalls:
     - num: 2
       title: "트랜잭션 전파와 readOnly, 그리고 롤백이 안 되는 이유"
       url: /posts/spring-transaction-propagation-and-readonly/
-      status: draft   # 2026-11-12 게시 뒤 published 로 바꾼다
+      status: published
     - num: 3
       title: "빈 하나인데 왜 두 번 만들어지지? 빈 생명주기와 순환 참조"
       status: draft
