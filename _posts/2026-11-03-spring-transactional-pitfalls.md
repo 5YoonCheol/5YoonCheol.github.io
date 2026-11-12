@@ -197,4 +197,4 @@ public void issueWelcomeCoupon(String email) {
 
 ---
 
-다음 편에서는 이 글 6번에서 잠깐 나온 전파 속성을 제대로 다룬다. `REQUIRES_NEW` 안에서 예외를 잡으면 어떻게 되는지, `readOnly = true`가 실제로 무엇을 막고 무엇을 못 막는지, 그리고 전파 속성이 커넥션 풀을 어떻게 잡아먹는지까지: **트랜잭션 전파와 readOnly, 그리고 롤백이 안 되는 이유** (11월 12일 게시 예정)
+다음 편에서는 이 글 6번에서 잠깐 나온 전파 속성을 제대로 다룬다. `REQUIRES_NEW` 안에서 예외를 잡으면 어떻게 되는지, `readOnly = true`가 실제로 무엇을 막고 무엇을 못 막는지, 그리고 전파 속성이 커넥션 풀을 어떻게 잡아먹는지까지: [트랜잭션 전파와 readOnly, 그리고 롤백이 안 되는 이유](/posts/spring-transaction-propagation-and-readonly/)
