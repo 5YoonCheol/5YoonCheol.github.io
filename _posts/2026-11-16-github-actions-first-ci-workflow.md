@@ -3,6 +3,7 @@ title: "[CI/CD] GitHub Actions로 PR마다 테스트 자동 실행하기"
 date: 2026-11-16 02:00:00 +0900
 categories: [DevOps, CI-CD]
 tags: [github-actions, ci, workflow, gradle, test-automation]
+render_with_liquid: false
 ---
 
 PR을 올리고 머지하기 전에 테스트를 돌리는 건 당연한 얘기지만, 손으로 하다 보면 결국 빼먹는다. 특히 AI 코딩 도구가 PR을 대신 열어주는 요즘은 사람이 매번 로컬에서 체크아웃해서 테스트를 돌릴 수가 없다. PR이 열리면 자동으로 테스트가 돌고, 결과가 PR 화면에 초록불이나 빨간불로 뜨게 만들어두면 머지 판단이 훨씬 쉬워진다. GitHub Actions로 이걸 처음부터 세팅하는 과정을 정리해보자. Java와 Gradle 프로젝트를 기준으로 하되, 다른 스택도 명령 몇 줄만 바꾸면 된다.
